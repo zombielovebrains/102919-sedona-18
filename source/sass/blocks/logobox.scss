@@ -1,0 +1,24 @@
+.logobox {
+  padding: 0 20px;
+  width: 320px;
+  min-height: 56px;
+  background-color: #fff;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo__logo {
+  position: absolute;
+  top: 0;
+  left: 110px;
+}
+
+.logo__burger {
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+  margin: 0;
+}

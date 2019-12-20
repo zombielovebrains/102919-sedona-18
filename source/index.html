@@ -3,23 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css\style.css">
     <title>Седона</title>
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container container--fullscreen">
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="">Главная</a></li>
-            <li class="main-nav__item"><a href="">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="">HTML academy</a></li>
+            <li><a href="" class="main-nav__item main-nav__item--first active-element">Главная</a></li>
+            <li><a href="" class="main-nav__item active-element">Фото и видео</a></li>
+            <li><a href="" class="main-nav__item active-element">Форма отзыва</a></li>
+            <li><a href="" class="main-nav__item main-nav__item--last active-element">HTML academy</a></li>
           </ul>
         </nav>
         <div class="logobox">
-          <div class="logo__logo">
-            <img src="img/logo-sedona-mobile.svg" width="102" height="83">
-          </div>
+          <img class="logo__logo" src="img/logo-sedona-mobile.svg" width="102" height="83">
           <button type="button" name="button" class="logo__burger">
             <img src="img/icon-menu.svg" alt="открыть меню" width="23" height="21">
           </button>
@@ -34,17 +33,19 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="container">
+        <div class="container container--fullscreen">
           <header class="advantages__header">
-            <b class="advantages__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-            <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            <b class="advantages__intro">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+            <p class="advantages__intro advantages__intro--small">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </header>
           <ul class="advantages__reasons">
-            <li class="advantages__reasonbox advantages__reasonbox--illustrated">
-              <p class="advantages__text advantages__text--title">Настоящий городок</p>
-              <p class="advantages__text">— №1 —</p>
-              <p class="advantages__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
-              <img src="source\img\main-city-mobile@1x.jpg" alt="фото городка" class="advantages__illustration">
+            <li class="advantages__item">
+              <div class="advantages__reasonbox advantages__reasonbox--illustrated advantages__reasonbox--triangle">
+                <p class="advantages__text advantages__text--title">Настоящий городок</p>
+                <p class="advantages__text">— №1 —</p>
+                <p class="advantages__text advantages__text--last">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <div class="advantages__illustration"><img src="img\main-city-mobile@1x.jpg" alt="фото городка"></div>
             </li>
             <li class="advantages__reasonbox promo">
               <ul class="promo__list">
@@ -63,25 +64,33 @@
               </ul>
             </li>
             <li class="advantages__reasonbox advantages__reasonbox--illustrated">
-              <p class="advantages__text advantages__text--title">Там есть мост дьявола</p>
-              <p class="advantages__text">— №2 —</p>
-              <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              <img src="source\img\main-city-mobile@1x.jpg" alt="фото городка" class="advantages__illustration">
+              <div class="advantages__reasonbox advantages__reasonbox--illustrated">
+                <p class="advantages__text advantages__text--title">Там есть мост дьявола</p>
+                <p class="advantages__text">— №2 —</p>
+                <p class="advantages__text advantages__text--last">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+              <div class="advantages__illustration"></div><img src="source\img\main-city-mobile@1x.jpg" alt="фото городка" class="advantages__illustration">
             </li>
             <li class="advantages__reasonbox">
-              <p class="advantages__text advantages__text--title">Небольшая площадь</p>
-              <p class="advantages__text">— №3 —</p>
-              <p class="advantages__text">Все интересные места находятся очень близко</p>
+              <div class="advantages__reasonbox">
+                <p class="advantages__text advantages__text--title">Небольшая площадь</p>
+                <p class="advantages__text">— №3 —</p>
+                <p class="advantages__text advantages__text--last">Все интересные места находятся очень близко</p>
+              </div>
             </li>
-            <li class="advantages__reasonbox">
-              <p class="advantages__text advantages__text--title">Красивая дорога</p>
-              <p class="advantages__text">— №4 —</p>
-              <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <li class="">
+              <div class="advantages__reasonbox">
+                <p class="advantages__text advantages__text--title">Красивая дорога</p>
+                <p class="advantages__text">— №4 —</p>
+                <p class="advantages__text advantages__text--last">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </li>
-            <li class="advantages__reasonbox">
-              <p class="advantages__text advantages__text--title">Мало туристов</p>
-              <p class="advantages__text">— №5 —</p>
-              <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
+            <li class="">
+              <div class="advantages__reasonbox">
+                <p class="advantages__text advantages__text--title">Мало туристов</p>
+                <p class="advantages__text">— №5 —</p>
+                <p class="advantages__text advantages__text--last">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
             </li>
           </ul>
         </div>
