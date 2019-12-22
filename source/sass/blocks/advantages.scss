@@ -35,19 +35,30 @@
 .advantages__reasons {
   list-style-type: none;
   margin: 0;
-  padding: 1px;
+  padding: 0px;
 }
 
-.advantages__reasonbox {
+.advantages__item {
+  background-color: $darkgray;
   padding: 1px;
 
   &--illustrated {
     color: #fff;
     background-color: $blue;
   }
+}
 
-  &--triangle {
+.advantages__reasonbox {
+  padding-top: 26px;
+
+  &--blue {
+    padding-top: 38px;
+    padding-bottom: 40px;
+  }
+
+  &--decorated {
     padding-top: 77px;
+    padding-bottom: 40px;
     position: relative;
 
     &::before {
@@ -56,9 +67,14 @@
       width: 320px;
       height: 37px;
       position: absolute;
-      top: 0;
+      top: -1px;
       left: -1px;
     }
+  }
+
+  &--border {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -71,27 +87,41 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #ffffff;
+  color: #333;
   text-transform: uppercase;
 
   margin-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
 
   &--title {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.44;
+    color: #000;
 
     margin-bottom: 0;
     margin-top: 0;
   }
 
   &--last {
-    margin-bottom: 40px;
+    margin-bottom: 0;
+  }
+
+  &--lastpadding {
+    padding-bottom: 27px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--lastborder {
+    border: none;
   }
 }
 
 .advantages__illustration {
-  overflow: hidden;
+  display: block;
+  margin-bottom: -1px;
 }

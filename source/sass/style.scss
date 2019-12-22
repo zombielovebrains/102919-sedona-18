@@ -7,6 +7,10 @@
 @import "blocks/logobox.scss";
 @import "blocks/main-screen.scss";
 @import "blocks/advantages.scss";
+@import "blocks/promo.scss";
+@import "blocks/booking.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
 
 html {
   box-sizing: border-box;
@@ -24,11 +28,6 @@ body {
 .container {
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
-
-  &--fullscreen {
-    padding: 0;
-  }
 }
 
 .visually-hidden {
