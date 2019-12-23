@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css\style.css">
-    <title>Седона - галерея</title>
+    <title>Седона - форма отзыва</title>
   </head>
   <body>
     <header class="page-header">
@@ -24,85 +24,83 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="main-screen main-screen--other">
+      <section class="main-screen">
         <div class="container">
           <div class="main-screen__text main-screen__text--min"><img src="img/text-sedona.svg" alt="" width="230" height="40"></div>
         </div>
       </section>
-      <section class="gallery">
-        <header class="gallery__header">
-          <div class="gallery__intro container">
-            <p class="gallery__text gallery__text--title">Фото и видео</p>
-            <p class="gallery__text gallery__text--last">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <section class="form">
+        <header class="form__header">
+          <div class="form__intro container">
+            <p class="form__text form__text--title">Оставьте свой отзыв</p>
+            <p class="form__text form__text--last">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
         </header>
-        <figure class="gallery__box">
-          <div class="gallery__body container">
-            <div class="gallery__photobox">
-              <a href=""><img src="img/photo-sunset-mobile@1x.jpg" alt="красивая фотография" width="280" height="280"></a>
+        <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__set fullname">
+            <div class="container form__box">
+              <p class="form__legend">Представьтесь:</p>
+              <label class="fullname__box">
+                <span class="fullname__label fullname__label--one">Имя*:</span>
+                <input type="text" class="form__input fullname__input" name="firstname" placeholder="Петр" id="firstname" required>
+              </label>
+              <label class="fullname__box">
+                <span class="fullname__label">Фамилия*:</span>
+                <input type="text" class="form__input fullname__input" name="middlename" placeholder="Иванов" id="middlename" required>
+              </label>
+              <label class="fullname__box fullname__box--last">
+                <span class="fullname__label">Отчество:</span>
+                <input type="text" class="form__input fullname__input" name="lastname" placeholder="Александрович" id="lastname" required>
+              </label>
             </div>
-            <figcaption class="gallery__description">
-              <p class="gallery__info gallery__info--name">Неродные просторы</p>
-              <p class="gallery__info gallery__info--author">Автор фото: Борис</p>
-              <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">1350</span></p>
-            </figcaption>
-          </div>
-        </figure>
-        <figure class="gallery__box">
-          <div class="gallery__body container">
-            <div class="gallery__photobox">
-              <a href=""><img src="img/photo-cactus-mobile@1x.jpg" alt="красивая фотография" width="280" height="280"></a>
+          </fieldset>
+          <fieldset class="form__set contact-form">
+            <div class="container form__box">
+              <p class="form__legend contact-form__legend">Контактная информация:</p>
+              <label class="contact-form__box">
+                <span class="contact-form__label contact-form__label--one">Контактный телефон*:</span>
+                <div class="contact-form__wrapper contact-form__wrapper--tel"><input type="tel" class="form__input contact-form__input contact-form__input--phone" name="phone" placeholder="Введите телефон" id="phone" required></div>
+              </label>
+              <label class="contact-form__box contact-form__box--last">
+                <span class="contact-form__label contact-form__label--one">Электронная почта*:</span>
+                <div class="contact-form__wrapper contact-form__wrapper--mail"><input type="email" class="form__input contact-form__input contact-form__input--mail" name="mail" placeholder="Введите e-mail" id="mail" required></div>
+              </label>
             </div>
-            <figcaption class="gallery__description">
-              <p class="gallery__info gallery__info--name">Местная растительность</p>
-              <p class="gallery__info gallery__info--author">Автор фото: Сергей</p>
-              <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">143</span></p>
-            </figcaption>
-          </div>
-        </figure>
-        <figure class="gallery__box">
-          <div class="gallery__body container">
-            <div class="gallery__photobox">
-              <a href=""><img src="img/photo-roads-mobile@1x.jpg" alt="красивая фотография" width="280" height="280"></a>
+          </fieldset>
+          <fieldset class="form__set poll">
+            <div class="container form__box">
+              <p class="form__legend poll__legend">Ваше общее впечатление:</p>
+              <input type="radio" name="poll" value="good" id="good" class="poll__input checked visually-hidden">
+              <label for="good" class="poll__label poll__label--first"><div class="poll__fakeinput"></div><span class="poll__text">Скорее положительное</span></label>
+              <input type="radio" name="poll" value="bad" id="bad" class="poll__input visually-hidden">
+              <label for="bad" class="poll__label"><div class="poll__fakeinput"></div><span class="poll__text">Скорее отрицательное</span></label>
+              <input type="radio" name="poll" value="neutral" id="neutral" class="poll__input visually-hidden">
+              <label for="neutral" class="poll__label poll__label--last"><div class="poll__fakeinput"></div><span class="poll__text">Затрудняюсь ответить</span></label>
             </div>
-            <figcaption class="gallery__description">
-              <p class="gallery__info gallery__info--name">Дорога на север</p>
-              <p class="gallery__info gallery__info--author">Автор фото: Петр</p>
-              <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">96</span></p>
-            </figcaption>
-          </div>
-        </figure>
-        <figure class="gallery__box">
-          <div class="gallery__body container">
-            <div class="gallery__photobox">
-              <a href=""><img src="img/photo-bridge-mobile@1x.jpg" alt="красивая фотография" width="280" height="280"></a>
+          </fieldset>
+          <fieldset class="form__set sights">
+            <div class="container form__box">
+              <p class="form__legend">Посещенные достопримечательности:</p>
+              <input type="checkbox" name="devilbridge" value="" class="visually-hidden" id="devilbridge">
+              <label for="devilbridge"><div class="sights__fakeinput"></div>Мост Дьявола</label>
+              <input type="checkbox" name="mountainbell" value="" class="visually-hidden" id="mountainbell">
+              <label for="mountainbell"><div class="sights__fakeinput"></div>Гора Колокол</label>
+              <input type="checkbox" name="slidepark" value="" class="visually-hidden" id="slidepark">
+              <label for="slidepark"><div class="sights__fakeinput"></div>Слайд-парк</label>
+              <input type="checkbox" name="redrocks" value="" class="visually-hidden" id="redrocks">
+              <label for="redrocks"><div class="sights__fakeinput"></div>Красные скалы</label>
             </div>
-            <figcaption class="gallery__description">
-              <p class="gallery__info gallery__info--name">Мост Дьявола</p>
-              <p class="gallery__info gallery__info--author">Автор фото: Антон</p>
-              <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">254</span></p>
-            </figcaption>
-          </div>
-        </figure>
-        <div class="gallery__videobox">
-          <div class="gallery__intro gallery__intro--video container">
-            <p class="gallery__text gallery__text--video gallery__text--title">Все ещё сомневаетесь?</p>
-            <p class="gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          </div>
-          <div class="gallery__video">
-            <img src="img\video-mobile@1x.jpg" alt="видео" width="321" height="201">
-            <div class="gallery__controlpanel">
-              <div class="gallery__timeline">
-                <div class="gallery__line"></div>
-              </div>
-              <div class="gallery__control">
-                <img src="img/icon-video-replay.svg" alt="повторить видео" width="16" height="20" class="gallery__replay">
-                <img src="img/icon-video-subtitles.svg" alt="субтитры" width="32" height="20" class="gallery__sub">
-                <img src="img/icon-video-fullscreen.svg" alt="полный экран" width="20" height="20" class="gallery__full">
-              </div>
+          </fieldset>
+          <div class="form__set review">
+            <div class="container form__box">
+              <label for="review" class="review__label form__legend">Опишите свои эмоции:</label>
+              <textarea name="name" class="review_textarea" id="review"></textarea>
             </div>
           </div>
-        </div>
+          <div class="container">
+            <button type="submit" name="button" class="form__btn">Отправить отзыв</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
@@ -115,5 +113,6 @@
         </ul>
         <p class="page-footer__text">Разработано<a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__htmlacademy"></a></p>
       </div>
+    </footer>
   </body>
 </html>

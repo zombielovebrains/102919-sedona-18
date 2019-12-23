@@ -1,0 +1,48 @@
+.fullname__box {
+  display: flex;
+  margin-top: 22px;
+
+  &--last {
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+.fullname__input {
+  height: 58px;
+  min-width: 0;
+  flex-grow: 1;
+  background-color: $lightgray;
+  border-style: none;
+  padding-left: 22px;
+
+  font-family: $font;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.fullname__label {
+  font-family: $font;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+
+  margin-right: 16px;
+  align-self: center;
+
+  &--one {
+    margin-right: 13px;
+  }
+}
