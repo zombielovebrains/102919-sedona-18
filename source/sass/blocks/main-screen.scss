@@ -3,9 +3,12 @@
   background-repeat: no-repeat;
   background-position: center;
   padding: 1px;
-  min-height: 389px;
   position: relative;
   z-index: -1;
+
+  &--other {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 
   &::after {
     content: "";
@@ -23,6 +26,12 @@
 
 .main-screen__text {
   margin-top: 89px;
+  margin-bottom: 84px;
   display: flex;
   justify-content: center;
+
+  &--min {
+    margin-top: 50px;
+    margin-bottom: 65px;
+  }
 }
