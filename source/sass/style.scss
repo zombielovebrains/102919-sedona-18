@@ -1,9 +1,7 @@
 @import "font.scss";
 @import "normalize.scss";
 @import "var.scss";
-
 @import "blocks/main-nav.scss";
-@import "blocks/page-header.scss";
 @import "blocks/logobox.scss";
 @import "blocks/main-screen.scss";
 @import "blocks/advantages.scss";
@@ -23,7 +21,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   transition: 0.2s;
 }
@@ -44,7 +44,7 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
