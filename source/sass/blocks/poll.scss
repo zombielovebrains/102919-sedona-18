@@ -1,0 +1,50 @@
+.poll__label {
+  min-height: 46px;
+  margin-top: 14px;
+  display: flex;
+  position: relative;
+
+  font-family: $font;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+
+  &--first {
+    margin-top: 25px;
+  }
+
+  &--last {
+    margin-bottom: 26px;
+  }
+}
+
+.poll__fakeinput {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  position: relative;
+
+  margin-right: 23px;
+}
+
+.poll__text {
+  margin-top: 13px;
+}
+
+.poll__input:checked + .poll__label::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #333;
+  position: absolute;
+  top: 18px;
+  left: 17px;
+  z-index: 2;
+}

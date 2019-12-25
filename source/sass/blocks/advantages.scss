@@ -1,0 +1,127 @@
+.advantages {
+  padding-top: 39px;
+}
+
+.advantages__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages__intro {
+  font-family: $font;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.44;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+  width: 260px;
+
+  &--small {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #333;
+
+    margin-top: 32px;
+    margin-bottom: 4px;
+  }
+}
+
+.advantages__reasons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+}
+
+.advantages__item {
+  background-color: $darkgray;
+  padding: 1px;
+
+  &--illustrated {
+    color: #fff;
+    background-color: $blue;
+  }
+}
+
+.advantages__reasonbox {
+  padding-top: 26px;
+
+  &--blue {
+    padding-top: 38px;
+    padding-bottom: 40px;
+  }
+
+  &--decorated {
+    padding-top: 77px;
+    padding-bottom: 40px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../img/white-copy-2.svg");
+      width: 320px;
+      height: 37px;
+      position: absolute;
+      top: -1px;
+      left: -1px;
+    }
+  }
+
+  &--border {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.advantages__text {
+  font-family: $font;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+
+  margin-top: 10px;
+
+  &--title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    color: #000;
+
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  &--last {
+    margin-bottom: 0;
+  }
+
+  &--lastpadding {
+    padding-bottom: 27px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--lastborder {
+    border: none;
+  }
+}
+
+.advantages__illustration {
+  display: block;
+  margin-bottom: -1px;
+}

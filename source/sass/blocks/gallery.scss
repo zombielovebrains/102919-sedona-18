@@ -1,0 +1,167 @@
+.gallery__header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.gallery__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 18px;
+
+  &--video {
+    padding-top: 15px;
+  }
+}
+
+.gallery__text {
+  width: 273px;
+  font-family: $font;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+
+  &--title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    color: #000000;
+  }
+
+  &--last {
+    margin-bottom: 27px;
+  }
+
+  &--video {
+    margin-bottom: 14px;
+  }
+}
+
+.gallery__box {
+  margin: 0;
+  padding-top: 22px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.gallery__body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gallery__info {
+  font-family: $font;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+
+  margin-bottom: 0;
+
+  &--author {
+    font-weight: normal;
+    color: #333;
+    text-transform: capitalize;
+    margin-top: 0;
+  }
+}
+
+.gallery__likes {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+
+  font-family: $font;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.gallery__like {
+  margin-right: 13px;
+  opacity: 0.3;
+  align-self: flex-start;
+}
+
+.gallery__count {
+  padding-top: 5px;
+}
+
+.gallery__videobox {
+  padding-bottom: 40px;
+}
+
+.gallery__video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 23px;
+}
+
+.gallery__timeline {
+  width: 280px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  margin-top: -45px;
+  padding-top: 2px;
+  display: flex;
+}
+
+.gallery__line {
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 1;
+    position: absolute;
+    top: -3px;
+    left: 35px;
+    z-index: 2;
+  }
+}
+
+.gallery__control {
+  display: flex;
+  align-items: center;
+
+  width: 280px;
+  min-height: 66px;
+  padding-left: 25px;
+  padding-right: 23px;
+  background-color: $lightgray;
+}
+
+.gallery__replay {
+  margin-right: 133px;
+}
+
+.gallery__sub {
+  margin-right: 31px;
+}
