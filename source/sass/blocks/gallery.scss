@@ -105,7 +105,7 @@
 }
 
 .gallery__videobox {
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 }
 
 .gallery__video {
@@ -164,4 +164,10 @@
 
 .gallery__sub {
   margin-right: 31px;
+}
+
+.gallery__btn {
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
 }
