@@ -191,10 +191,8 @@
       font-weight: bold;
       line-height: 1.24;
 
-      margin-bottom: 0;
-      margin-top: 0;
-      padding-left: 7px;
-      padding-right: 7px;
+      margin: 0 auto;
+      width: 150px;
     }
 
     &--last {
@@ -251,6 +249,10 @@
     &--right {
       order: 2;
     }
+
+    &--gray {
+      width: 256px;
+    }
   }
 
   .advantages__item {
@@ -258,8 +260,10 @@
       display: flex;
       justify-content: center;
     }
+
     &--gray {
       display: flex;
+      justify-content: center;
     }
   }
 
@@ -303,8 +307,9 @@
 
   .advantages__text {
     &--title {
-      padding-left: 68px;
-      padding-right: 68px;
+      width: 150px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &--lastpadding {
@@ -334,6 +339,10 @@
         top: -1px;
         left: -1px;
       }
+    }
+
+    &--gray {
+      width: 400px;
     }
   }
 }
