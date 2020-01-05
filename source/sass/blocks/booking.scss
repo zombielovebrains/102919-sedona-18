@@ -22,6 +22,10 @@
   &--last {
     margin-bottom: 35px;
   }
+
+  &--tablet {
+    display: none;
+  }
 }
 
 .booking__btn {
@@ -57,5 +61,81 @@
 
   &:disabled {
     background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: 768px) {
+  .booking__text {
+    font-family: $font;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0 auto;
+
+    &--title {
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 0.87;
+      color: #000000;
+
+      margin-top: 58px;
+      margin-bottom: 30px;
+    }
+
+    &--last {
+      margin-bottom: 41px;
+    }
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  .booking__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 458px;
+    height: 58px;
+    background-color: $blue;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: $font;
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
   }
 }

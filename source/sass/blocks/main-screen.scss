@@ -6,10 +6,6 @@
   position: relative;
   z-index: -1;
 
-  &--other {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-  }
-
   &::after {
     content: "";
     background-image: url("../img/bg-intro-triangle-mobile.svg");
@@ -33,5 +29,65 @@
   &--min {
     margin-top: 50px;
     margin-bottom: 65px;
+  }
+
+  &--medium {
+    display: none;
+  }
+}
+
+@media (min-width: 321px) {
+  .main-screen {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+@media(min-width: 768px) {
+  .main-screen {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 1px;
+    position: relative;
+    z-index: -1;
+
+    &::after {
+      content: "";
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 57px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+    }
+  }
+
+  .main-screen__text {
+    margin-top: 75px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+
+    &--min {
+      margin-top: 50px;
+      margin-bottom: 65px;
+    }
+
+    &--small {
+      display: none;
+    }
+
+    &--medium {
+      display: flex;
+    }
+  }
+}
+
+@media(min-width: 769px) {
+  .main-screen {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
   }
 }

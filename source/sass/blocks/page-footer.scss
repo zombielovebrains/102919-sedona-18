@@ -53,3 +53,29 @@
     right: 0;
   }
 }
+
+@media (min-width: 768px) {
+  .page-footer__flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+  }
+
+  .page-footer__hashtag {
+    padding-left: 15px;
+    margin-top: 30px;
+    padding-top: 0px;
+  }
+
+  .page-footer__text {
+    margin-right: 15px;
+    margin-top: 27px;
+  }
+
+  .page-footer__social {
+    margin-right: 8px;
+    margin-top: 30px;
+  }
+}

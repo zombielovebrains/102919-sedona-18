@@ -10,8 +10,9 @@
     <header class="page-header">
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
-          <li><a href="" class="main-nav__item main-nav__item--first active-element">Главная</a></li>
+          <li><a href="" class="main-nav__item main-nav__item--active main-nav__item--first active-element">Главная</a></li>
           <li><a href="" class="main-nav__item active-element">Фото и видео</a></li>
+          <li class="main-nav__item main-nav__item--logobox"><img class="main-nav__logo" src="img/logo-sedona-mobile.svg" width="102" height="83"></li>
           <li><a href="" class="main-nav__item active-element">Форма отзыва</a></li>
           <li><a href="" class="main-nav__item main-nav__item--last active-element">HTML academy</a></li>
         </ul>
@@ -27,7 +28,8 @@
       <h1 class="visually-hidden">Организация Туров в Седону</h1>
       <section class="main-screen">
         <div class="container">
-          <div class="main-screen__text"><img src="img/text-sedona-index.svg" alt="" width="281" height="214"></div>
+          <div class="main-screen__text main-screen__text--small"><img src="img/text-sedona-index.svg" alt="" width="281" height="214"></div>
+          <div class="main-screen__text main-screen__text--medium"><img src="img/text-sedona-index.svg" alt="" width="460" height="350"></div>
         </div>
       </section>
       <section class="advantages">
@@ -61,21 +63,31 @@
             </ul>
           </li>
           <li class="advantages__item advantages__item--illustrated ">
-            <div class="advantages__reasonbox advantages__reasonbox--blue container">
+            <div class="advantages__reasonbox advantages__reasonbox--right advantages__reasonbox--blue container">
               <p class="advantages__text advantages__text--white advantages__text--title">ТАМ ЕСТЬ Мост дьявола</p>
               <p class="advantages__text advantages__text--white">— №2 —</p>
               <p class="advantages__text advantages__text--white advantages__text--last">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantages__photobox advantages__photobox--bridge"></div>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--gray">
             <div class="advantages__reasonbox advantages__reasonbox--border container">
               <p class="advantages__text advantages__text--title">Небольшая площадь</p>
               <p class="advantages__text">— №3 —</p>
               <p class="advantages__text advantages__text--lastpadding">Все интересные места находятся<br> очень близко</p>
             </div>
+            <div class="advantages__reasonbox advantages__reasonbox--border container">
+              <p class="advantages__text advantages__text--title">Красивая дорога</p>
+              <p class="advantages__text">— №4 —</p>
+              <p class="advantages__text advantages__text--lastpadding">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+            </div>
+            <div class="advantages__reasonbox container">
+              <p class="advantages__text advantages__text--title">Мало туристов</p>
+              <p class="advantages__text">— №5 —</p>
+              <p class="advantages__text advantages__text--lastpadding advantages__text--lastborder">Большинство едет в Гранд Каньон<br> и толпится там</p>
+            </div>
           </li>
-          <li class="advantages__item">
+          <!-- <li class="advantages__item">
             <div class="advantages__reasonbox advantages__reasonbox--border container">
               <p class="advantages__text advantages__text--title">Красивая дорога</p>
               <p class="advantages__text">— №4 —</p>
@@ -88,13 +100,14 @@
               <p class="advantages__text">— №5 —</p>
               <p class="advantages__text advantages__text--lastpadding advantages__text--lastborder">Большинство едет в Гранд Каньон<br> и толпится там</p>
             </div>
-          </li>
+          </li> -->
         </ul>
       </section>
       <section class="booking">
         <div class="container">
           <p class="booking__text booking__text--title">Заинтересовались?</p>
-          <p class="booking__text booking__text--last">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="booking__text booking__text--mobile booking__text--last">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="booking__text booking__text--tablet booking__text--last">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a href="" class="booking__btn">Найти гостиницу</a>
         </div>
       </section>
