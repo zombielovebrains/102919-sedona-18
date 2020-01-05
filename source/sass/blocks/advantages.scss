@@ -138,7 +138,7 @@
   }
 
   &--bridge {
-    background-image: url("../img/photo-bridge-mobile@1x.jpg");
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
   }
 }
 
@@ -149,7 +149,7 @@
     }
 
     &--bridge {
-      background-image: url("../img/photo-bridge-mobile@2x.jpg");
+      background-image: url("../img/main-bridge-mobile@2x.jpg");
     }
   }
 }
@@ -276,8 +276,64 @@
     }
 
     &--bridge {
-      background-image: url("../img/photo-bridge-tablet@2x.jpg");
+      background-image: url("../img/main-bridge-tablet@1x.jpg");
       order: 1;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages__photobox {
+    background-size: cover;
+    min-height: 256px;
+    min-width: 800px;
+    margin-top: -1px;
+    background-position: center;
+
+    &--main-city {
+      background-image: url("../img/main-city-desktop@1x.jpg");
+
+    }
+
+    &--bridge {
+      background-image: url("../img/main-bridge-desktop@1x.jpg");
+      order: 1;
+    }
+  }
+
+  .advantages__text {
+    &--title {
+      padding-left: 68px;
+      padding-right: 68px;
+    }
+
+    &--lastpadding {
+      padding-bottom: 65px;
+    }
+  }
+
+  .advantages__reasonbox {
+    padding-top: 45px;
+
+    &--blue {
+      padding-top: 53px;
+      padding-bottom: 40px;
+    }
+
+    &--decorated {
+      padding-top: 53px;
+      padding-bottom: 40px;
+      position: relative;
+
+      &::before {
+        content: "";
+        background-image: none;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+      }
     }
   }
 }

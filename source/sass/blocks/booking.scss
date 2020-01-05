@@ -139,3 +139,15 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .booking__text {
+    &--last {
+      margin-bottom: 48px;
+    }
+  }
+
+  .booking__btn {
+    margin-bottom: 65px;
+  }
+}

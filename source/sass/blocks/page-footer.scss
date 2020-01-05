@@ -79,3 +79,21 @@
     margin-top: 30px;
   }
 }
+
+@media (min-width: 1200px) {
+  .page-footer__hashtag {
+    padding-left: 63px;
+    margin-top: 30px;
+    padding-top: 0px;
+  }
+
+  .page-footer__text {
+    margin-right: 63px;
+    margin-top: 27px;
+  }
+
+  .page-footer__social {
+    margin-right: 8px;
+    margin-top: 30px;
+  }
+}
