@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css\style.css">
-    <title>Седона</title>
+    <title>Седона - галерея</title>
   </head>
   <body>
     <header class="page-header">
@@ -29,80 +29,99 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Организация Туров в Седону</h1>
-      <section class="main-screen">
+      <section class="main-screen main-screen--other">
         <div class="container">
-          <div class="main-screen__text main-screen__text--small"><img src="img/text-sedona-index.svg" alt="" width="281" height="214"></div>
-          <div class="main-screen__text main-screen__text--medium"><img src="img/text-sedona-index.svg" alt="" width="460" height="350"></div>
+          <div class="main-screen__text main-screen__text--min"><img src="img/text-sedona.svg" alt="" width="230" height="40"></div>
+          <div class="main-screen__text main-screen__text--min-v2"><img src="img/text-sedona.svg" alt="" width="460" height="80"></div>
         </div>
       </section>
-      <section class="advantages">
-        <header class="advantages__header">
-          <b class="advantages__intro">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-          <p class="advantages__intro advantages__intro--small">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <section class="gallery">
+        <header class="gallery__header">
+          <div class="gallery__intro container">
+            <p class="gallery__text gallery__text--title">Фото и видео</p>
+            <p class="gallery__text gallery__text--last">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
         </header>
-        <ul class="advantages__reasons">
-          <li class="advantages__item advantages__item--illustrated ">
-            <div class="container advantages__reasonbox advantages__reasonbox--decorated">
-              <p class="advantages__text advantages__text--white advantages__text--title">Настоящий городок</p>
-              <p class="advantages__text advantages__text--white">— №1 —</p>
-              <p class="advantages__text advantages__text--white advantages__text--last">Седона не аттракцион для туристов, <br>там течёт своя жизнь</p>
-            </div>
-            <div class="advantages__photobox advantages__photobox--main-city"></div>
+        <ul class="gallery__list">
+          <li class="gallery__item  gallery__item--fullwidth">
+            <figure class="gallery__box gallery__box--fullwidth">
+              <div class="gallery__body">
+                <div class="gallery__photobox">
+                  <a class="gallery__photo gallery__photo--sunset" href=""></a>
+                </div>
+                <figcaption class="gallery__description gallery__description--lightgray">
+                  <p class="gallery__info gallery__info--name">Неродные просторы</p>
+                  <p class="gallery__info gallery__info--author">Автор фото: Борис</p>
+                  <p class="gallery__likes gallery__likes--fullwidth"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">1350</span></p>
+                </figcaption>
+              </div>
+            </figure>
           </li>
-          <li class="promo container">
-            <ul class="promo__list">
-              <li class="promo__item promo__item--house">
-                <p class="promo__text promo__text--title">Жилье</p>
-                <p class="promo__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="promo__item promo__item--gift">
-                <p class="promo__text promo__text--title">Сувениры</p>
-                <p class="promo__text">Не только китайского, но и местного производства!</p>
-              </li>
-              <li class="promo__item promo__item--food">
-                <p class="promo__text promo__text--title">Еда</p>
-                <p class="promo__text promo__text--last">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-              </li>
-            </ul>
+          <li class="gallery__item">
+            <figure class="gallery__box gallery__box--leftcol">
+              <div class="gallery__body">
+                <div class="gallery__photobox">
+                  <a class="gallery__photo gallery__photo--cactus" href=""></a>
+                </div>
+                <figcaption class="gallery__description gallery__description--lightgray">
+                  <p class="gallery__info gallery__info--name">Местная растительность</p>
+                  <p class="gallery__info gallery__info--author">Автор фото: Сергей</p>
+                  <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">143</span></p>
+                </figcaption>
+              </div>
+            </figure>
           </li>
-          <li class="advantages__item advantages__item--illustrated ">
-            <div class="advantages__reasonbox advantages__reasonbox--right advantages__reasonbox--blue container">
-              <p class="advantages__text advantages__text--white advantages__text--title">ТАМ ЕСТЬ Мост дьявола</p>
-              <p class="advantages__text advantages__text--white">— №2 —</p>
-              <p class="advantages__text advantages__text--white advantages__text--last">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-            <div class="advantages__photobox advantages__photobox--bridge"></div>
+          <li class="gallery__item">
+            <figure class="gallery__box gallery__box--rightcol">
+              <div class="gallery__body">
+                <div class="gallery__photobox">
+                  <a class="gallery__photo gallery__photo--roads" href=""></a>
+                </div>
+                <figcaption class="gallery__description gallery__description--darkgray">
+                  <p class="gallery__info gallery__info--name">Дорога на север</p>
+                  <p class="gallery__info gallery__info--author">Автор фото: Петр</p>
+                  <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">96</span></p>
+                </figcaption>
+              </div>
+            </figure>
           </li>
-          <li class="advantages__item advantages__item--gray">
-            <div class="advantages__reasonbox advantages__reasonbox--gray advantages__reasonbox--border">
-              <p class="advantages__text advantages__text--title">Небольшая площадь</p>
-              <p class="advantages__text">— №3 —</p>
-              <p class="advantages__text advantages__text--lastpadding">Все интересные места находятся<br> очень близко</p>
-            </div>
-            <div class="advantages__reasonbox advantages__reasonbox--gray advantages__reasonbox--border">
-              <p class="advantages__text advantages__text--title">Красивая дорога</p>
-              <p class="advantages__text">— №4 —</p>
-              <p class="advantages__text advantages__text--lastpadding">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
-            </div>
-            <div class="advantages__reasonbox advantages__reasonbox--gray">
-              <p class="advantages__text advantages__text--title">Мало туристов</p>
-              <p class="advantages__text">— №5 —</p>
-              <p class="advantages__text advantages__text--lastpadding advantages__text--lastborder">Большинство едет в Гранд Каньон<br> и толпится там</p>
-            </div>
+          <li class="gallery__item">
+            <figure class="gallery__box gallery__box--leftcol">
+              <div class="gallery__body">
+                <div class="gallery__photobox">
+                  <a class="gallery__photo gallery__photo--bridge" href=""></a>
+                </div>
+                <figcaption class="gallery__description gallery__description--lightgray">
+                  <p class="gallery__info gallery__info--name">Мост Дьявола</p>
+                  <p class="gallery__info gallery__info--author">Автор фото: Антон</p>
+                  <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">254</span></p>
+                </figcaption>
+              </div>
+            </figure>
           </li>
         </ul>
-      </section>
-      <section class="booking">
-        <div class="container">
-          <p class="booking__text booking__text--title">Заинтересовались?</p>
-          <p class="booking__text booking__text--mobile booking__text--last">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <p class="booking__text booking__text--tablet booking__text--last">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a href="" class="booking__btn">Найти гостиницу</a>
+        <div class="gallery__videobox">
+          <div class="gallery__intro gallery__intro--video container">
+            <p class="gallery__text gallery__text--video gallery__text--title">Все ещё сомневаетесь?</p>
+            <p class="gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <div class="gallery__video">
+            <div class="gallery__videowrap"></div>
+            <div class="gallery__controlpanel">
+              <div class="gallery__timeline gallery__timeline--v1">
+                <div class="gallery__line"></div>
+              </div>
+              <div class="gallery__control">
+                <button class="gallery__btn active-element"><img src="img/icon-video-replay.svg" alt="повторить видео" width="16" height="20" class="gallery__replay"></button>
+                <div class="gallery__timeline gallery__timeline--v2">
+                  <div class="gallery__line"></div>
+                </div>
+                <button class="gallery__btn active-element"><img src="img/icon-video-subtitles.svg" alt="субтитры" width="32" height="20" class="gallery__sub"></button>
+                <button class="gallery__btn active-element"><img src="img/icon-video-fullscreen.svg" alt="полный экран" width="20" height="20" class="gallery__full"></button>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acddccaa46fdac086bc6b987a179f5370e3f2d2d4d2b1b225d4674ef174fbe297&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe>
       </section>
     </main>
     <footer class="page-footer">
