@@ -122,4 +122,12 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
+
+  .main-screen__text {
+    &--min-v2 {
+      display: flex;
+      margin-top: 100px;
+      margin-bottom: 118px;
+    }
+  }
 }

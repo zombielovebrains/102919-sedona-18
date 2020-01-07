@@ -58,7 +58,7 @@
 }
 
 .gallery__photo {
-  width: 280px;
+  min-width: 280px;
   height: 280px;
   display: flex;
 
@@ -281,7 +281,7 @@
   }
 
   .gallery__photo {
-    width: 324px;
+    min-width: 324px;
     height: 267px;
     display: flex;
 
@@ -352,7 +352,7 @@
 
   .gallery__videowrap {
     background-image: url("../img/video-tablet@1x.jpg");
-    width: 648px;
+    min-width: 648px;
     height: 499px;
   }
 
@@ -395,7 +395,7 @@
   }
 
   .gallery__control {
-    width: 648px;
+    min-width: 648px;
     min-height: 93px;
     margin-top: -92px;
     padding-top: 3px;
@@ -410,5 +410,106 @@
 
   .gallery__videobox {
     padding-bottom: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery__intro {
+    padding-top: 82px;
+
+    &--video {
+      padding-top: 22px;
+    }
+  }
+
+  .gallery__text {
+    &--title {
+      margin-bottom: 17px;
+    }
+  }
+
+  .gallery__list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .gallery__box {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  .gallery__photo {
+    background-position: bottom;
+    &--sunset  {
+      width: 100%;
+      background-image: url("../img/photo-sunset-desktop@1x.jpg");
+    }
+
+    &--cactus {
+      background-image: url("../img/photo-cactus-desktop@1x.jpg");
+      background-size: cover;
+    }
+
+    &--roads {
+      background-image: url("../img/photo-roads-desktop@1x.jpg");
+      background-size: cover;
+    }
+
+    &--bridge {
+      background-image: url("../img/photo-bridge-desktop@1x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .gallery__item {
+    flex-basis: 33.333%;
+    display: flex;
+    &--fullwidth {
+      flex-basis: 100%;
+    }
+  }
+
+  .gallery__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .gallery__info {
+    color:: #ffffff;
+  }
+
+  .gallery__likes {
+    color: #ffffff;
+    left: 315px;
+
+    &--fullwidth {
+      left: 1115px;
+    }
+  }
+
+  .gallery__like {
+    opacity: 1;
+  }
+
+  .gallery__videowrap {
+    background-image: url("../img/video-desktop@1x.jpg");
+    min-width: 800px;
+  }
+
+  .gallery__control {
+    min-width: 800px;
+  }
+
+  .gallery__line {
+    width: 540px;
+  }
+
+  .gallery__videobox {
+    padding-bottom: 90px;
   }
 }
