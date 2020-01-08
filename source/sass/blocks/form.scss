@@ -77,12 +77,6 @@
   }
 }
 
-// .form__box {
-//   width: 280px;
-//   margin: 0 auto;
-//   padding: 0 20px;
-// }
-//
 @media (min-width: 768px) {
   .form__header {
     border-bottom: none;
@@ -158,6 +152,33 @@
     line-height: 1.24;
     &--left {
       text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .form__form {
+    padding-left: 63px;
+    padding-right: 63px;
+  }
+
+  .form__intro {
+    padding-top: 82px;
+  }
+
+  .form__text {
+    &--last {
+      margin-bottom: 60px;
+    }
+  }
+
+  .form__set {
+    &--contact-form {
+      padding-top: 66px;
+    }
+
+    &--sights {
+      padding-top: 52px;
     }
   }
 }

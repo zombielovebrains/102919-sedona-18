@@ -122,3 +122,22 @@
     align-self: center;
   }
 }
+
+@media (min-width: 1200px) {
+  .review__label {
+    &::before {
+      width: 280px;
+    }
+    &::after {
+      width: 280px;
+    }
+  }
+
+  .review__btn {
+    width: 480px;
+  }
+
+  .review__btnwrap {
+    margin-bottom: 70px;
+  }
+}

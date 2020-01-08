@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css\style.css">
-    <title>Седона - форма отзыва</title>
+    <title>Седона</title>
   </head>
   <body>
     <header class="page-header">
@@ -29,87 +29,80 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="main-screen main-screen--other">
+      <h1 class="visually-hidden">Организация Туров в Седону</h1>
+      <section class="main-screen">
         <div class="container">
-          <div class="main-screen__text main-screen__text--min"><img src="img/text-sedona.svg" alt="" width="230" height="40"></div>
-          <div class="main-screen__text main-screen__text--min-v2"><img src="img/text-sedona.svg" alt="" width="460" height="80"></div>
+          <div class="main-screen__text main-screen__text--small"><img src="img/text-sedona-index.svg" alt="" width="281" height="214"></div>
+          <div class="main-screen__text main-screen__text--medium"><img src="img/text-sedona-index.svg" alt="" width="460" height="350"></div>
         </div>
       </section>
-      <section class="form">
-        <header class="form__header">
-          <div class="form__intro container">
-            <p class="form__text form__text--title">Оставьте свой отзыв</p>
-            <p class="form__text form__text--last">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-          </div>
+      <section class="advantages">
+        <header class="advantages__header">
+          <b class="advantages__intro">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+          <p class="advantages__intro advantages__intro--small">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </header>
-        <div class="container">
-          <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form__set form__set--halfwidth form__set--fullname fullname">
-              <div class="form__box form__box--border form__box--halfwidth form__box--halfwidth--left">
-                <p class="form__legend form__legend--left">Представьтесь:</p>
-                <label class="fullname__box fullname__box--first">
-                  <span class="fullname__label fullname__label--one">Имя*:</span>
-                  <input type="text" class="form__input fullname__input" name="firstname" placeholder="Петр" id="firstname" required>
-                </label>
-                <label class="fullname__box">
-                  <span class="fullname__label">Фамилия*:</span>
-                  <input type="text" class="form__input fullname__input" name="middlename" placeholder="Иванов" id="middlename" required>
-                </label>
-                <label class="fullname__box fullname__box--last">
-                  <span class="fullname__label">Отчество:</span>
-                  <input type="text" class="form__input fullname__input" name="lastname" placeholder="Александрович" id="lastname" required>
-                </label>
-              </div>
-            </fieldset>
-            <fieldset class="form__set form__set--contact-form contact-form">
-              <div class="form__box">
-                <p class="form__legend contact-form__legend">Контактная информация:</p>
-                <label class="contact-form__box">
-                  <span class="contact-form__label contact-form__label--one">Контактный телефон*:</span>
-                  <div class="contact-form__wrapper contact-form__wrapper--tel"><input type="tel" class="form__input contact-form__input contact-form__input--phone" name="phone" placeholder="Введите телефон" id="phone" required></div>
-                </label>
-                <label class="contact-form__box contact-form__box--last">
-                  <span class="contact-form__label contact-form__label--one">Электронная почта*:</span>
-                  <div class="contact-form__wrapper contact-form__wrapper--mail"><input type="email" class="form__input contact-form__input contact-form__input--mail" name="mail" placeholder="Введите e-mail" id="mail" required></div>
-                </label>
-              </div>
-            </fieldset>
-            <fieldset class="form__set form__set--halfwidth form__set--poll poll">
-              <div class="form__box form__box--halfwidth form__box--halfwidth--right">
-                <p class="form__legend form__legend--left  poll__legend ">Ваше общее впечатление:</p>
-                <input type="radio" name="poll" value="good" id="good" class="poll__input checked visually-hidden">
-                <label for="good" class="poll__label poll__label--first"><div class="poll__fakeinput"></div><span class="poll__text">Скорее положительное</span></label>
-                <input type="radio" name="poll" value="bad" id="bad" class="poll__input visually-hidden">
-                <label for="bad" class="poll__label"><div class="poll__fakeinput"></div><span class="poll__text">Скорее отрицательное</span></label>
-                <input type="radio" name="poll" value="neutral" id="neutral" class="poll__input visually-hidden">
-                <label for="neutral" class="poll__label poll__label--last"><div class="poll__fakeinput"></div><span class="poll__text">Затрудняюсь ответить</span></label>
-              </div>
-            </fieldset>
-            <fieldset class="form__set form__set--sights sights">
-              <div class="form__box sights__box">
-                <p class="form__legend sights__legend">Посещенные достопримечательности:</p>
-                <input type="checkbox" name="devilbridge" value="" class="sights__input visually-hidden" id="devilbridge" checked>
-                <label for="devilbridge" class="sights__label sights__label--leftcol  sights__label--first"><div class="sights__fakeinput"></div><span class="sights__text">Мост Дьявола</span></label>
-                <input type="checkbox" name="mountainbell" value="" class="sights__input visually-hidden" id="mountainbell" checked>
-                <label for="mountainbell" class="sights__label sights__label--firstcol sights__label--rightcol"><div class="sights__fakeinput"></div><span class="sights__text">Гора-Колокол</span></label>
-                <input type="checkbox" name="slidepark" value="" class="sights__input visually-hidden" id="slidepark" checked>
-                <label for="slidepark" class="sights__label sights__label--leftcol"><div class="sights__fakeinput"></div><span class="sights__text">Слайд-парк</span></label>
-                <input type="checkbox" name="redrocks" value="" class="sights__input visually-hidden" id="redrocks">
-                <label for="redrocks" class="sights__label sights__label--rightcol sights__label--last"><div class="sights__fakeinput"></div><span class="sights__text">Красные скалы</span></label>
-              </div>
-            </fieldset>
-            <div class="form__set form__set--last form__set--review review">
-              <div class="form__box">
-                <label for="review" class="review__label form__legend">Опишите свои эмоции:</label>
-                <textarea name="review" class="form__input review__textarea" id="review">Опишите подробно все свои восторги</textarea>
-              </div>
-              <div class="review__btnwrap">
-                <div class="form__box"><button type="submit" name="button" class="review__btn">Отправить отзыв</button></div>
-                <p class="review__warning">* — обязательные поля</p>
-              </div>
+        <ul class="advantages__reasons">
+          <li class="advantages__item advantages__item--illustrated ">
+            <div class="container advantages__reasonbox advantages__reasonbox--decorated">
+              <p class="advantages__text advantages__text--white advantages__text--title">Настоящий городок</p>
+              <p class="advantages__text advantages__text--white">— №1 —</p>
+              <p class="advantages__text advantages__text--white advantages__text--last">Седона не аттракцион для туристов, <br>там течёт своя жизнь</p>
             </div>
-          </form>
+            <div class="advantages__photobox advantages__photobox--main-city"></div>
+          </li>
+          <li class="promo container">
+            <ul class="promo__list">
+              <li class="promo__item promo__item--house">
+                <p class="promo__text promo__text--title">Жилье</p>
+                <p class="promo__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="promo__item promo__item--gift">
+                <p class="promo__text promo__text--title">Сувениры</p>
+                <p class="promo__text">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="promo__item promo__item--food">
+                <p class="promo__text promo__text--title">Еда</p>
+                <p class="promo__text promo__text--last">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages__item advantages__item--illustrated ">
+            <div class="advantages__reasonbox advantages__reasonbox--right advantages__reasonbox--blue container">
+              <p class="advantages__text advantages__text--white advantages__text--title">ТАМ ЕСТЬ Мост дьявола</p>
+              <p class="advantages__text advantages__text--white">— №2 —</p>
+              <p class="advantages__text advantages__text--white advantages__text--last">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="advantages__photobox advantages__photobox--bridge"></div>
+          </li>
+          <li class="advantages__item advantages__item--gray">
+            <div class="advantages__reasonbox advantages__reasonbox--gray advantages__reasonbox--border">
+              <p class="advantages__text advantages__text--title">Небольшая площадь</p>
+              <p class="advantages__text">— №3 —</p>
+              <p class="advantages__text advantages__text--lastpadding">Все интересные места находятся<br> очень близко</p>
+            </div>
+            <div class="advantages__reasonbox advantages__reasonbox--gray advantages__reasonbox--border">
+              <p class="advantages__text advantages__text--title">Красивая дорога</p>
+              <p class="advantages__text">— №4 —</p>
+              <p class="advantages__text advantages__text--lastpadding">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+            </div>
+            <div class="advantages__reasonbox advantages__reasonbox--gray">
+              <p class="advantages__text advantages__text--title">Мало туристов</p>
+              <p class="advantages__text">— №5 —</p>
+              <p class="advantages__text advantages__text--lastpadding advantages__text--lastborder">Большинство едет в Гранд Каньон<br> и толпится там</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="booking">
+        <div class="container">
+          <p class="booking__text booking__text--title">Заинтересовались?</p>
+          <p class="booking__text booking__text--mobile booking__text--last">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="booking__text booking__text--tablet booking__text--last">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a href="" class="booking__btn">Найти гостиницу</a>
         </div>
+      </section>
+      <section class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acddccaa46fdac086bc6b987a179f5370e3f2d2d4d2b1b225d4674ef174fbe297&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe>
       </section>
     </main>
     <footer class="page-footer">
