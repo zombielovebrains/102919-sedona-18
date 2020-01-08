@@ -57,6 +57,11 @@ body {
   }
 }
 
+.max-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

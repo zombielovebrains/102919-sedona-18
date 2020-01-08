@@ -37,11 +37,16 @@
   text-transform: uppercase;
 
   margin-top: 22px;
-  padding-right: 41px;
   min-height: 34px;
   display: flex;
   align-items: center;
+}
+
+.page-footer__htmlacademy {
   position: relative;
+  width: 27px;
+  height: 34px;
+  padding-left: 41px;
 
   &::after {
     content: "";
@@ -49,7 +54,7 @@
     width: 27px;
     height: 34px;
     position: absolute;
-    top: 2px;
+    top: 0;
     right: 0;
   }
 }
