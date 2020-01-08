@@ -40,7 +40,7 @@
 
 .advantages__item {
   background-color: $darkgray;
-  padding: 1px;
+  padding-top: 1px;
 
   &--illustrated {
     color: #fff;
@@ -109,6 +109,7 @@
   &--lastpadding {
     padding-bottom: 27px;
     margin-bottom: 0;
+    margin-top: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -124,4 +125,224 @@
 .advantages__illustration {
   display: block;
   margin-bottom: -1px;
+}
+
+.advantages__photobox {
+  background-size: cover;
+  min-height: 260px;
+  background-position: center;
+
+  &--main-city {
+    background-image: url("../img/main-city-mobile@1x.jpg");
+
+  }
+
+  &--bridge {
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
+  }
+}
+
+@media (min-width: 321px) {
+  .advantages__photobox {
+    &--main-city {
+      background-image: url("../img/main-city-mobile@2x.jpg");
+    }
+
+    &--bridge {
+      background-image: url("../img/main-bridge-mobile@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    padding-top: 47px;
+  }
+
+  .advantages__intro {
+    font-family: $font;
+    font-size: 21px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+
+    width: 500px;
+
+    &--small {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.86;
+      color: #333;
+
+      margin-top: 26px;
+      margin-bottom: 50px;
+    }
+  }
+
+
+  .advantages__text {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    &--title {
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1.24;
+
+      margin: 0 auto;
+      width: 150px;
+    }
+
+    &--last {
+      margin-bottom: 0;
+    }
+
+    &--lastpadding {
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-bottom: 45px;
+      margin-bottom: 0;
+      margin-top: 15px;
+      border-bottom: none;
+    }
+
+    &--white {
+      color: #fff;
+    }
+
+    &--lastborder {
+      border: none;
+    }
+  }
+
+  .advantages__reasonbox {
+    padding-top: 45px;
+
+    &--blue {
+      padding-top: 45px;
+      padding-bottom: 40px;
+    }
+
+    &--decorated {
+      padding-top: 45px;
+      padding-bottom: 40px;
+      position: relative;
+
+      &::before {
+        content: "";
+        background-image: none;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+      }
+    }
+
+    &--border {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &--right {
+      order: 2;
+    }
+
+    &--gray {
+      width: 256px;
+    }
+  }
+
+  .advantages__item {
+    &--illustrated {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--gray {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .advantages__photobox {
+    background-size: cover;
+    min-height: 256px;
+    min-width: 512px;
+    margin-top: -1px;
+    background-position: bottom;
+
+    &--main-city {
+      background-image: url("../img/main-city-tablet@1x.jpg");
+
+    }
+
+    &--bridge {
+      background-image: url("../img/main-bridge-tablet@1x.jpg");
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages__photobox {
+    background-size: cover;
+    min-height: 256px;
+    min-width: 800px;
+    margin-top: -1px;
+    background-position: center;
+
+    &--main-city {
+      background-image: url("../img/main-city-desktop@1x.jpg");
+
+    }
+
+    &--bridge {
+      background-image: url("../img/main-bridge-desktop@1x.jpg");
+      order: 1;
+    }
+  }
+
+  .advantages__text {
+    &--title {
+      width: 150px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &--lastpadding {
+      padding-bottom: 65px;
+    }
+  }
+
+  .advantages__reasonbox {
+    padding-top: 45px;
+
+    &--blue {
+      padding-top: 53px;
+      padding-bottom: 40px;
+    }
+
+    &--decorated {
+      padding-top: 53px;
+      padding-bottom: 40px;
+      position: relative;
+
+      &::before {
+        content: "";
+        background-image: none;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+      }
+    }
+
+    &--gray {
+      width: 400px;
+    }
+  }
 }

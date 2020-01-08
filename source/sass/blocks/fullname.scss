@@ -1,7 +1,6 @@
 .fullname__box {
   display: flex;
   margin-top: 22px;
-
   &--last {
     margin-top: 20px;
     margin-bottom: 24px;
@@ -10,7 +9,7 @@
 
 .fullname__input {
   height: 58px;
-  min-width: 0;
+  width: 0;
   flex-grow: 1;
   background-color: $lightgray;
   border: solid 4px transparent;
@@ -44,5 +43,27 @@
 
   &--one {
     margin-right: 13px;
+  }
+}
+
+@media (min-width: 768px) {
+  .fullname {
+    padding-left: 59px;
+  }
+
+  .fullname__box {
+    &--first{
+      margin-top: 57px;
+    }
+
+    &--last {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .fullname {
+    padding-left: 80px;
   }
 }

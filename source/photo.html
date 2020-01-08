@@ -7,114 +7,135 @@
     <title>Седона - галерея</title>
   </head>
   <body>
-    <header class="page-header">
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li><a href="" class="main-nav__item main-nav__item--first active-element">Главная</a></li>
-          <li><a href="" class="main-nav__item active-element">Фото и видео</a></li>
-          <li><a href="" class="main-nav__item active-element">Форма отзыва</a></li>
-          <li><a href="" class="main-nav__item main-nav__item--last active-element">HTML academy</a></li>
-        </ul>
-      </nav>
-      <div class="logobox">
-        <img class="logo__logo" src="img/logo-sedona-mobile.svg" width="102" height="83">
-        <button type="button" name="button" class="logo__burger">
-          <img src="img/icon-menu.svg" alt="открыть меню" width="23" height="21">
-        </button>
-      </div>
-    </header>
-    <main class="page-main">
-      <section class="main-screen main-screen--other">
-        <div class="container">
-          <div class="main-screen__text main-screen__text--min"><img src="img/text-sedona.svg" alt="" width="230" height="40"></div>
+    <div class="max-box">
+      <header class="page-header">
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li><a href="" class="main-nav__item main-nav__item--active main-nav__item--first active-element">Главная</a></li>
+            <li><a href="photo.html" class="main-nav__item active-element">Фото и видео</a></li>
+            <li class="main-nav__item main-nav__item--logobox">
+              <a href="index.html" class=" active-element"><img class="main-nav__logo main-nav__logo--main" src="img/logo-sedona-mobile.svg" width="102" height="83"></a>
+              <a href="index.html" class=" active-element"><img class="main-nav__logo main-nav__logo--clouds" src="img/logo-sedona-tablet.svg" width="102" height="83"></a>
+              <a href="index.html" class=" active-element"><img class="main-nav__logo main-nav__logo--border" src="img/logo-sedona-desktop.svg" width="188" height="96"></a>
+            </li>
+            <li><a href="form.html" class="main-nav__item active-element">Форма отзыва</a></li>
+            <li><a href="" class="main-nav__item main-nav__item--last active-element">HTML academy</a></li>
+          </ul>
+        </nav>
+        <div class="logobox">
+          <a href="index.html" class=" active-element"><img class="logo__logo" src="img/logo-sedona-mobile.svg" width="102" height="83"></a>
+          <button type="button" name="button" class="logo__burger">
+            <img src="img/icon-menu.svg" alt="открыть меню" width="23" height="21">
+          </button>
         </div>
-      </section>
-      <section class="gallery">
-        <header class="gallery__header">
-          <div class="gallery__intro container">
-            <p class="gallery__text gallery__text--title">Фото и видео</p>
-            <p class="gallery__text gallery__text--last">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </header>
+      <main class="page-main">
+        <section class="main-screen main-screen--other">
+          <div class="container">
+            <div class="main-screen__text main-screen__text--min"><img src="img/text-sedona.svg" alt="" width="230" height="40"></div>
+            <div class="main-screen__text main-screen__text--min-v2"><img src="img/text-sedona.svg" alt="" width="460" height="80"></div>
           </div>
-        </header>
-        <figure class="gallery__box">
-          <div class="gallery__body container">
-            <div class="gallery__photobox">
-              <a href=""><img src="img/photo-sunset-mobile@1x.jpg" alt="красивая фотография" width="280" height="280"></a>
+        </section>
+        <section class="gallery">
+          <header class="gallery__header">
+            <div class="gallery__intro container">
+              <p class="gallery__text gallery__text--title">Фото и видео</p>
+              <p class="gallery__text gallery__text--last">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
             </div>
-            <figcaption class="gallery__description">
-              <p class="gallery__info gallery__info--name">Неродные просторы</p>
-              <p class="gallery__info gallery__info--author">Автор фото: Борис</p>
-              <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">1350</span></p>
-            </figcaption>
-          </div>
-        </figure>
-        <figure class="gallery__box">
-          <div class="gallery__body container">
-            <div class="gallery__photobox">
-              <a href=""><img src="img/photo-cactus-mobile@1x.jpg" alt="красивая фотография" width="280" height="280"></a>
+          </header>
+          <ul class="gallery__list">
+            <li class="gallery__item  gallery__item--fullwidth">
+              <figure class="gallery__box gallery__box--fullwidth">
+                <div class="gallery__body">
+                  <div class="gallery__photobox">
+                    <a class="gallery__photo gallery__photo--sunset" href=""></a>
+                  </div>
+                  <figcaption class="gallery__description gallery__description--lightgray">
+                    <p class="gallery__info gallery__info--name">Неродные просторы</p>
+                    <p class="gallery__info gallery__info--author">Автор фото: Борис</p>
+                    <p class="gallery__likes gallery__likes--fullwidth"><button class="gallery__btn active-element"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"></button><span class="gallery__count">1350</span></p>
+                  </figcaption>
+                </div>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__box gallery__box--leftcol">
+                <div class="gallery__body">
+                  <div class="gallery__photobox">
+                    <a class="gallery__photo gallery__photo--cactus" href=""></a>
+                  </div>
+                  <figcaption class="gallery__description gallery__description--lightgray">
+                    <p class="gallery__info gallery__info--name">Местная растительность</p>
+                    <p class="gallery__info gallery__info--author">Автор фото: Сергей</p>
+                    <p class="gallery__likes"><button class="gallery__btn active-element"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"></button><span class="gallery__count">143</span></p>
+                  </figcaption>
+                </div>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__box gallery__box--rightcol">
+                <div class="gallery__body">
+                  <div class="gallery__photobox">
+                    <a class="gallery__photo gallery__photo--roads" href=""></a>
+                  </div>
+                  <figcaption class="gallery__description gallery__description--darkgray">
+                    <p class="gallery__info gallery__info--name">Дорога на север</p>
+                    <p class="gallery__info gallery__info--author">Автор фото: Петр</p>
+                    <p class="gallery__likes"><button class="gallery__btn active-element"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"></button><span class="gallery__count">96</span></p>
+                  </figcaption>
+                </div>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure class="gallery__box gallery__box--leftcol">
+                <div class="gallery__body">
+                  <div class="gallery__photobox">
+                    <a class="gallery__photo gallery__photo--bridge" href=""></a>
+                  </div>
+                  <figcaption class="gallery__description gallery__description--lightgray">
+                    <p class="gallery__info gallery__info--name">Мост Дьявола</p>
+                    <p class="gallery__info gallery__info--author">Автор фото: Антон</p>
+                    <p class="gallery__likes"><button class="gallery__btn active-element"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"></button><span class="gallery__count">254</span></p>
+                  </figcaption>
+                </div>
+              </figure>
+            </li>
+          </ul>
+          <div class="gallery__videobox">
+            <div class="gallery__intro gallery__intro--video container">
+              <p class="gallery__text gallery__text--video gallery__text--title">Все еще сомневаетесь?</p>
+              <p class="gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             </div>
-            <figcaption class="gallery__description">
-              <p class="gallery__info gallery__info--name">Местная растительность</p>
-              <p class="gallery__info gallery__info--author">Автор фото: Сергей</p>
-              <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">143</span></p>
-            </figcaption>
-          </div>
-        </figure>
-        <figure class="gallery__box">
-          <div class="gallery__body container">
-            <div class="gallery__photobox">
-              <a href=""><img src="img/photo-roads-mobile@1x.jpg" alt="красивая фотография" width="280" height="280"></a>
-            </div>
-            <figcaption class="gallery__description">
-              <p class="gallery__info gallery__info--name">Дорога на север</p>
-              <p class="gallery__info gallery__info--author">Автор фото: Петр</p>
-              <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">96</span></p>
-            </figcaption>
-          </div>
-        </figure>
-        <figure class="gallery__box">
-          <div class="gallery__body container">
-            <div class="gallery__photobox">
-              <a href=""><img src="img/photo-bridge-mobile@1x.jpg" alt="красивая фотография" width="280" height="280"></a>
-            </div>
-            <figcaption class="gallery__description">
-              <p class="gallery__info gallery__info--name">Мост Дьявола</p>
-              <p class="gallery__info gallery__info--author">Автор фото: Антон</p>
-              <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">254</span></p>
-            </figcaption>
-          </div>
-        </figure>
-        <div class="gallery__videobox">
-          <div class="gallery__intro gallery__intro--video container">
-            <p class="gallery__text gallery__text--video gallery__text--title">Все ещё сомневаетесь?</p>
-            <p class="gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          </div>
-          <div class="gallery__video">
-            <img src="img\video-mobile@1x.jpg" alt="видео" width="321" height="201">
-            <div class="gallery__controlpanel">
-              <div class="gallery__timeline">
-                <div class="gallery__line"></div>
+            <div class="gallery__video">
+              <div class="gallery__videowrap"></div>
+              <div class="gallery__controlpanel">
+                <div class="gallery__timeline gallery__timeline--v1">
+                  <div class="gallery__line"></div>
+                </div>
+                <div class="gallery__control">
+                  <button class="gallery__btn gallery__btn--replay active-element"></button>
+                  <div class="gallery__timeline gallery__timeline--v2">
+                    <div class="gallery__line"></div>
+                  </div>
+                  <button class="gallery__btn gallery__btn--sub active-element"></button>
+                  <button class="gallery__btn gallery__btn--full active-element"></button>
+                </div>
               </div>
-              <div class="gallery__control">
-                <img src="img/icon-video-replay.svg" alt="повторить видео" width="16" height="20" class="gallery__replay">
-                <img src="img/icon-video-subtitles.svg" alt="субтитры" width="32" height="20" class="gallery__sub">
-                <img src="img/icon-video-fullscreen.svg" alt="полный экран" width="20" height="20" class="gallery__full">
-              </div>
             </div>
           </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__flexbox container">
+          <p class="page-footer__hashtag">#visitSEDONA</p>
+          <ul class="page-footer__social social-list">
+            <li class="social-list__box"><a href="" class="social-list__icon active-element"><img src="img/icon-twitter.svg" alt="седона твиттер" width="18" height="14" class="social-list__img"></a></li>
+            <li class="social-list__box"><a href="" class="social-list__icon active-element"><img src="img/icon-facebook.svg" alt="седона фейсбук" width="9" height="18" class="social-list__img"></a></li>
+            <li class="social-list__box"><a href="" class="social-list__icon active-element"><img src="img/icon-youtube.svg" alt="седона ютуб" width="20" height="14" class="social-list__img"></a></li>
+          </ul>
+          <p class="page-footer__text">Разработано<a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__htmlacademy"></a></p>
         </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__flexbox container">
-        <p class="page-footer__hashtag">#visitSEDONA</p>
-        <ul class="page-footer__social social-list">
-          <li class="social-list__box"><a href="" class="social-list__icon"><img src="img/icon-twitter.svg" alt="седона твиттер" width="18" height="14" class="social-list__img"></a></li>
-          <li class="social-list__box"><a href="" class="social-list__icon"><img src="img/icon-facebook.svg" alt="седона фейсбук" width="9" height="18" class="social-list__img"></a></li>
-          <li class="social-list__box"><a href="" class="social-list__icon"><img src="img/icon-youtube.svg" alt="седона ютуб" width="20" height="14" class="social-list__img"></a></li>
-        </ul>
-        <p class="page-footer__text">Разработано<a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__htmlacademy"></a></p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

@@ -48,3 +48,34 @@
   left: 17px;
   z-index: 2;
 }
+
+@media (min-width: 768px) {
+  .poll {
+    border-right:  1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .poll__label {
+    margin-top: 23px;
+    &--first {
+      margin-top: 60px;
+    }
+
+    &--last {
+      margin-bottom: 0;
+    }
+  }
+
+  .poll__fakeinput {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .poll {
+    padding-left: 5px;
+  }
+
+  .poll__legend {
+    padding-left: 75px;
+  }
+}

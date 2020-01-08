@@ -36,12 +36,18 @@
       width: 23px;
       height: 22px;
       background-image: url("../img/icon-cross.svg");
+      background-repeat: no-repeat;
       position: absolute;
       top: 50%;
       right: 20px;
       margin-top: -11px;
       z-index: 2;
     }
+  }
+
+
+  &--logobox {
+    display: none;
   }
 
   &--last {
@@ -56,5 +62,121 @@
   &:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.main-nav__logo {
+  &--clouds {
+    display: none;
+  }
+
+  &--border {
+    display: none;
+  }
+}
+
+@media(min-width: 768px)  {
+  .main-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    width: 153px;
+    font-family: $font;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+
+    background-color: #ffffff;
+    box-shadow: none;
+    &--logobox {
+      width: 156px;
+      position: relative;
+      display: flex;
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      color: $blue;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--first {
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 23px;
+        height: 22px;
+        background-image: none;
+        position: absolute;
+      }
+    }
+
+    &--active {
+      color: #766357;
+      &:hover {
+        color: #604e43;
+      }
+      &:active {
+        color: rgba(118, 99, 87, 0.3);
+      }
+    }
+  }
+
+  .main-nav__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -51px;
+
+    &--clouds {
+      display: block;
+    }
+
+    &--main {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__item {
+    width: 239px;
+    &--logobox {
+      width: 244px;
+    }
+  }
+
+  .main-nav__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -94px;
+
+    &--clouds {
+      display: none;
+    }
+
+    &--border {
+      display: block;
+    }
+
+    &--main {
+      display: none;
+    }
   }
 }
