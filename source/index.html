@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css\style.css">
-    <title>Седона - галерея</title>
+    <title>Седона - форма отзыва</title>
   </head>
   <body>
     <header class="page-header">
@@ -35,92 +35,80 @@
           <div class="main-screen__text main-screen__text--min-v2"><img src="img/text-sedona.svg" alt="" width="460" height="80"></div>
         </div>
       </section>
-      <section class="gallery">
-        <header class="gallery__header">
-          <div class="gallery__intro container">
-            <p class="gallery__text gallery__text--title">Фото и видео</p>
-            <p class="gallery__text gallery__text--last">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <section class="form">
+        <header class="form__header">
+          <div class="form__intro container">
+            <p class="form__text form__text--title">Оставьте свой отзыв</p>
+            <p class="form__text form__text--last">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
         </header>
-        <ul class="gallery__list">
-          <li class="gallery__item  gallery__item--fullwidth">
-            <figure class="gallery__box gallery__box--fullwidth">
-              <div class="gallery__body">
-                <div class="gallery__photobox">
-                  <a class="gallery__photo gallery__photo--sunset" href=""></a>
-                </div>
-                <figcaption class="gallery__description gallery__description--lightgray">
-                  <p class="gallery__info gallery__info--name">Неродные просторы</p>
-                  <p class="gallery__info gallery__info--author">Автор фото: Борис</p>
-                  <p class="gallery__likes gallery__likes--fullwidth"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">1350</span></p>
-                </figcaption>
+        <div class="container">
+          <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="form__set form__set--halfwidth form__set--fullname fullname">
+              <div class="form__box form__box--border form__box--halfwidth form__box--halfwidth--left">
+                <p class="form__legend form__legend--left">Представьтесь:</p>
+                <label class="fullname__box fullname__box--first">
+                  <span class="fullname__label fullname__label--one">Имя*:</span>
+                  <input type="text" class="form__input fullname__input" name="firstname" placeholder="Петр" id="firstname" required>
+                </label>
+                <label class="fullname__box">
+                  <span class="fullname__label">Фамилия*:</span>
+                  <input type="text" class="form__input fullname__input" name="middlename" placeholder="Иванов" id="middlename" required>
+                </label>
+                <label class="fullname__box fullname__box--last">
+                  <span class="fullname__label">Отчество:</span>
+                  <input type="text" class="form__input fullname__input" name="lastname" placeholder="Александрович" id="lastname" required>
+                </label>
               </div>
-            </figure>
-          </li>
-          <li class="gallery__item">
-            <figure class="gallery__box gallery__box--leftcol">
-              <div class="gallery__body">
-                <div class="gallery__photobox">
-                  <a class="gallery__photo gallery__photo--cactus" href=""></a>
-                </div>
-                <figcaption class="gallery__description gallery__description--lightgray">
-                  <p class="gallery__info gallery__info--name">Местная растительность</p>
-                  <p class="gallery__info gallery__info--author">Автор фото: Сергей</p>
-                  <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">143</span></p>
-                </figcaption>
+            </fieldset>
+            <fieldset class="form__set form__set--contact-form contact-form">
+              <div class="form__box">
+                <p class="form__legend contact-form__legend">Контактная информация:</p>
+                <label class="contact-form__box">
+                  <span class="contact-form__label contact-form__label--one">Контактный телефон*:</span>
+                  <div class="contact-form__wrapper contact-form__wrapper--tel"><input type="tel" class="form__input contact-form__input contact-form__input--phone" name="phone" placeholder="Введите телефон" id="phone" required></div>
+                </label>
+                <label class="contact-form__box contact-form__box--last">
+                  <span class="contact-form__label contact-form__label--one">Электронная почта*:</span>
+                  <div class="contact-form__wrapper contact-form__wrapper--mail"><input type="email" class="form__input contact-form__input contact-form__input--mail" name="mail" placeholder="Введите e-mail" id="mail" required></div>
+                </label>
               </div>
-            </figure>
-          </li>
-          <li class="gallery__item">
-            <figure class="gallery__box gallery__box--rightcol">
-              <div class="gallery__body">
-                <div class="gallery__photobox">
-                  <a class="gallery__photo gallery__photo--roads" href=""></a>
-                </div>
-                <figcaption class="gallery__description gallery__description--darkgray">
-                  <p class="gallery__info gallery__info--name">Дорога на север</p>
-                  <p class="gallery__info gallery__info--author">Автор фото: Петр</p>
-                  <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">96</span></p>
-                </figcaption>
+            </fieldset>
+            <fieldset class="form__set form__set--halfwidth form__set--poll poll">
+              <div class="form__box form__box--halfwidth form__box--halfwidth--right">
+                <p class="form__legend form__legend--left  poll__legend ">Ваше общее впечатление:</p>
+                <input type="radio" name="poll" value="good" id="good" class="poll__input checked visually-hidden">
+                <label for="good" class="poll__label poll__label--first"><div class="poll__fakeinput"></div><span class="poll__text">Скорее положительное</span></label>
+                <input type="radio" name="poll" value="bad" id="bad" class="poll__input visually-hidden">
+                <label for="bad" class="poll__label"><div class="poll__fakeinput"></div><span class="poll__text">Скорее отрицательное</span></label>
+                <input type="radio" name="poll" value="neutral" id="neutral" class="poll__input visually-hidden">
+                <label for="neutral" class="poll__label poll__label--last"><div class="poll__fakeinput"></div><span class="poll__text">Затрудняюсь ответить</span></label>
               </div>
-            </figure>
-          </li>
-          <li class="gallery__item">
-            <figure class="gallery__box gallery__box--leftcol">
-              <div class="gallery__body">
-                <div class="gallery__photobox">
-                  <a class="gallery__photo gallery__photo--bridge" href=""></a>
-                </div>
-                <figcaption class="gallery__description gallery__description--lightgray">
-                  <p class="gallery__info gallery__info--name">Мост Дьявола</p>
-                  <p class="gallery__info gallery__info--author">Автор фото: Антон</p>
-                  <p class="gallery__likes"><img src="img/icon-like.svg" alt="лайк" width="23" height="21" class="gallery__like"><span class="gallery__count">254</span></p>
-                </figcaption>
+            </fieldset>
+            <fieldset class="form__set form__set--sights sights">
+              <div class="form__box sights__box">
+                <p class="form__legend sights__legend">Посещенные достопримечательности:</p>
+                <input type="checkbox" name="devilbridge" value="" class="sights__input visually-hidden" id="devilbridge" checked>
+                <label for="devilbridge" class="sights__label sights__label--leftcol  sights__label--first"><div class="sights__fakeinput"></div><span class="sights__text">Мост Дьявола</span></label>
+                <input type="checkbox" name="mountainbell" value="" class="sights__input visually-hidden" id="mountainbell" checked>
+                <label for="mountainbell" class="sights__label sights__label--firstcol sights__label--rightcol"><div class="sights__fakeinput"></div><span class="sights__text">Гора-Колокол</span></label>
+                <input type="checkbox" name="slidepark" value="" class="sights__input visually-hidden" id="slidepark" checked>
+                <label for="slidepark" class="sights__label sights__label--leftcol"><div class="sights__fakeinput"></div><span class="sights__text">Слайд-парк</span></label>
+                <input type="checkbox" name="redrocks" value="" class="sights__input visually-hidden" id="redrocks">
+                <label for="redrocks" class="sights__label sights__label--rightcol sights__label--last"><div class="sights__fakeinput"></div><span class="sights__text">Красные скалы</span></label>
               </div>
-            </figure>
-          </li>
-        </ul>
-        <div class="gallery__videobox">
-          <div class="gallery__intro gallery__intro--video container">
-            <p class="gallery__text gallery__text--video gallery__text--title">Все еще сомневаетесь?</p>
-            <p class="gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          </div>
-          <div class="gallery__video">
-            <div class="gallery__videowrap"></div>
-            <div class="gallery__controlpanel">
-              <div class="gallery__timeline gallery__timeline--v1">
-                <div class="gallery__line"></div>
+            </fieldset>
+            <div class="form__set form__set--last form__set--review review">
+              <div class="form__box">
+                <label for="review" class="review__label form__legend">Опишите свои эмоции:</label>
+                <textarea name="review" class="form__input review__textarea" id="review">Опишите подробно все свои восторги</textarea>
               </div>
-              <div class="gallery__control">
-                <button class="gallery__btn active-element"><img src="img/icon-video-replay.svg" alt="повторить видео" width="16" height="20" class="gallery__replay"></button>
-                <div class="gallery__timeline gallery__timeline--v2">
-                  <div class="gallery__line"></div>
-                </div>
-                <button class="gallery__btn active-element"><img src="img/icon-video-subtitles.svg" alt="субтитры" width="32" height="20" class="gallery__sub"></button>
-                <button class="gallery__btn active-element"><img src="img/icon-video-fullscreen.svg" alt="полный экран" width="20" height="20" class="gallery__full"></button>
+              <div class="review__btnwrap">
+                <div class="form__box"><button type="submit" name="button" class="review__btn">Отправить отзыв</button></div>
+                <p class="review__warning">* — обязательные поля</p>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </section>
     </main>

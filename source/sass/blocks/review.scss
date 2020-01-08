@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-.review_textarea {
+.review__textarea {
   width: 279px;
   height: 160px;
   background-color: $lightgray;
@@ -59,5 +59,66 @@
 
   &:disabled {
     background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: 768px) {
+  .review__textarea {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    width: 100%;
+  }
+
+  .review__label {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+      display: block;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+      display: block;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      right: 0;
+    }
+  }
+  .review__btnwrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+  }
+
+  .review__btn {
+    width: 324px;
+    margin-bottom: 0;
+  }
+
+  .review__warning {
+    font-family: $font;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: right;
+    color: #333333;
+    text-transform: uppercase;
+
+    align-self: center;
   }
 }

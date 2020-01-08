@@ -85,3 +85,37 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .contact-form__box {
+    margin-top: 25px;
+  }
+
+  .contact-form__legend {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+      display: block;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+      display: block;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      right: 0;
+    }
+  }
+}
