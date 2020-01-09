@@ -31,6 +31,14 @@
   position: relative;
 
   margin-right: 23px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
 }
 
 .sights__text {

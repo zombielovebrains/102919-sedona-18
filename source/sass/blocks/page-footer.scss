@@ -47,6 +47,7 @@
   width: 27px;
   height: 34px;
   padding-left: 41px;
+  transition: 0.4;
 
   &::after {
     content: "";
@@ -56,6 +57,19 @@
     position: absolute;
     top: 0;
     right: 0;
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("../img/logo-htmlacademy0.svg");
+    }
+  }
+
+  &:active {
+    &::after {
+      background-image: url("../img/logo-htmlacademy.svg");
+      opacity: 0.3;
+    }
   }
 }
 
