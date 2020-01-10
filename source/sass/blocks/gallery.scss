@@ -123,6 +123,9 @@
 }
 
 .gallery__like {
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/icon-like0.svg");
   margin-right: 13px;
   opacity: 0.3;
   align-self: flex-start;
@@ -209,6 +212,15 @@
     height: 20px;
     background-image: url("../img/icon-video-replay0.svg");
     margin-right: 133px;
+
+    &:hover {
+      background-image: url("../img/icon-video-replay-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-video-replay-hover.svg");
+      opacity: 0.3;
+    }
   }
 
   &--sub {
@@ -216,12 +228,30 @@
     height: 20px;
     background-image: url("../img/icon-video-subtitles0.svg");
     margin-right: 31px;
+
+    &:hover {
+      background-image: url("../img/icon-video-subtitles-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-video-subtitles-hover.svg");
+      opacity: 0.3;
+    }
   }
 
   &--full {
     width: 20px;
     height: 20px;
     background-image: url("../img/icon-video-fullscreen0.svg");
+
+    &:hover {
+      background-image: url("../img/icon-video-fullscreen-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-video-fullscreen-hover.svg");
+      opacity: 0.3;
+    }
   }
 }
 
@@ -354,6 +384,8 @@
 
   .gallery__like {
     margin-right: 10px;
+    background-image: url("../img/icon-like.svg");
+    opacity: 1;
   }
 
   .gallery__count {
@@ -426,14 +458,44 @@
     &--replay {
       background-image: url("../img/icon-video-replay.svg");
       margin-right: 42px;
+
+      &:hover {
+        background-image: url("../img/icon-video-replay.svg");
+        opacity: 0.6;
+      }
+
+      &:active {
+        background-image: url("../img/icon-video-replay.svg");
+        opacity: 0.3;
+      }
     }
 
     &--sub {
       background-image: url("../img/icon-video-subtitles.svg");
+
+      &:hover {
+        background-image: url("../img/icon-video-subtitles.svg");
+        opacity: 0.6;
+      }
+
+      &:active {
+        background-image: url("../img/icon-video-subtitles.svg");
+        opacity: 0.3;
+      }
     }
 
     &--full {
       background-image: url("../img/icon-video-fullscreen.svg");
+
+      &:hover {
+        background-image: url("../img/icon-video-fullscreen.svg");
+        opacity: 0.6;
+      }
+
+      &:active {
+        background-image: url("../img/icon-video-fullscreen.svg");
+        opacity: 0.3;
+      }
     }
   }
 }

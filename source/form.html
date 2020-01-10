@@ -11,15 +11,15 @@
       <header class="page-header">
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list">
-            <li><a href="" class="main-nav__item main-nav__item--active main-nav__item--first active-element">Главная</a></li>
-            <li><a href="photo.html" class="main-nav__item active-element">Фото и видео</a></li>
+            <li class="main-nav__wrap"><a href="" class="main-nav__item main-nav__item--active main-nav__item--first active-element">Главная</a></li>
+            <li class="main-nav__wrap"><a href="photo.html" class="main-nav__item active-element">Фото и видео</a></li>
             <li class="main-nav__item main-nav__item--logobox">
               <a href="index.html" class=" active-element"><img class="main-nav__logo main-nav__logo--main" src="img/logo-sedona-mobile.svg" width="102" height="83"></a>
               <a href="index.html" class=" active-element"><img class="main-nav__logo main-nav__logo--clouds" src="img/logo-sedona-tablet.svg" width="102" height="83"></a>
               <a href="index.html" class=" active-element"><img class="main-nav__logo main-nav__logo--border" src="img/logo-sedona-desktop.svg" width="188" height="96"></a>
             </li>
-            <li><a href="form.html" class="main-nav__item active-element">Форма отзыва</a></li>
-            <li><a href="" class="main-nav__item main-nav__item--last active-element">HTML academy</a></li>
+            <li class="main-nav__wrap"><a href="form.html" class="main-nav__item active-element">Форма отзыва</a></li>
+            <li class="main-nav__wrap"><a href="" class="main-nav__item main-nav__item--last active-element">HTML academy</a></li>
           </ul>
         </nav>
         <div class="logobox">
@@ -30,6 +30,30 @@
         </div>
       </header>
       <main class="page-main">
+        <section class="fail-modal visually-hidden">
+          <div class="fail-modal__box">
+            <p class="fail-modal__text fail-modal__text--title">
+              Что-то пошло не так!
+            </p>
+            <p class="fail-modal__text">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+            </p>
+            <button class="fail-modal__btn active-element">OK</button>
+          </div>
+        </section>
+        <section class="review-modal visually-hidden">
+          <div class="review-modal__box">
+            <div class="review-modal__wrap">
+              <p class="review-modal__text review-modal__text--title">Ваш отзыв отправлен!</p>
+              <p class="review-modal__text">
+                Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.
+              </p>
+            </div>
+            <div class="review-modal__wrap review-modal__wrap--gray">
+              <button class="review-modal__btn active-element">Закрыть окно</button>
+            </div>
+          </div>
+        </section>
         <section class="main-screen main-screen--other">
           <div class="container">
             <div class="main-screen__text main-screen__text--min"><img src="img/text-sedona.svg" alt="" width="230" height="40"></div>
@@ -81,7 +105,7 @@
               <fieldset class="form__set form__set--halfwidth form__set--poll poll">
                 <div class="form__box form__box--halfwidth form__box--halfwidth--right">
                   <p class="form__legend form__legend--left  poll__legend ">Ваше общее впечатление:</p>
-                  <input type="radio" name="poll" value="good" id="good" class="poll__input checked visually-hidden">
+                  <input type="radio" name="poll" value="good" id="good" class="poll__input visually-hidden"  checked >
                   <label for="good" class="poll__label poll__label--first active-element"><div class="poll__fakeinput"></div><span class="poll__text">Скорее положительное</span></label>
                   <input type="radio" name="poll" value="bad" id="bad" class="poll__input visually-hidden">
                   <label for="bad" class="poll__label active-element"><div class="poll__fakeinput"></div><span class="poll__text">Скорее отрицательное</span></label>

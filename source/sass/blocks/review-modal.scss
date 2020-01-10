@@ -1,0 +1,133 @@
+.review-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 4;
+}
+
+.review-modal__box {
+  width: 320px;
+  height: 323px;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-modal__wrap {
+  &--gray {
+    width: 100%;
+    min-height: 98px;
+    background-color: $lightgray;
+    display: flex;
+  }
+}
+
+.review-modal__text {
+  font-family: $font;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.72;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+  padding: 0 53px;
+
+  &--title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    color: #000000;
+    margin-top: 43px;
+    margin-bottom: 28px;
+  }
+}
+
+.review-modal__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 58px;
+  margin: auto;
+  background-color: $blue;
+  border-style: none;
+
+  font-family: $font;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: 768px) {
+  .review-modal__box {
+    width: 640px;
+    height: 347px;
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .review-modal__wrap {
+    &--gray {
+      width: 100%;
+      min-height: 146px;
+      background-color: $lightgray;
+      display: flex;
+    }
+  }
+
+  .review-modal__text {
+    padding: 0 53px;
+
+    &--title {
+      font-size: 30px;
+      line-height: 0.87;
+      margin-top: 62px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .review-modal__btn {
+    font-size: 21px;
+    line-height: 1.24;
+    width: 458px;
+  }
+}
