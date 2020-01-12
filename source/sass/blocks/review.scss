@@ -96,6 +96,7 @@
       right: 0;
     }
   }
+
   .review__btnwrap {
     display: flex;
     justify-content: space-between;
@@ -125,9 +126,11 @@
 
 @media (min-width: 1200px) {
   .review__label {
+
     &::before {
       width: 280px;
     }
+
     &::after {
       width: 280px;
     }
