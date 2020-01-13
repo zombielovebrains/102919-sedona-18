@@ -50,26 +50,22 @@
   width: 21px;
   height: 21px;
   border-radius: 50%;
-  background-color: #333;
+  background-color: #333333;
   position: absolute;
   top: 18px;
   left: 17px;
   z-index: 2;
 }
 
-.poll__label::before {
-  &:active {
-    opacity: 0.3;
-  }
-}
 
 @media (min-width: 768px) {
   .poll {
-    border-right:  1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .poll__label {
     margin-top: 23px;
+
     &--first {
       margin-top: 60px;
     }

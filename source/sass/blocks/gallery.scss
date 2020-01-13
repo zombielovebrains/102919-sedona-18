@@ -32,7 +32,7 @@
   line-height: 1.71;
   letter-spacing: normal;
   text-align: center;
-  color: #333;
+  color: #333333;
   text-transform: uppercase;
 
   &--title {
@@ -99,7 +99,7 @@
 
   &--author {
     font-weight: normal;
-    color: #333;
+    color: #333333;
     text-transform: capitalize;
     margin-top: 0;
   }
@@ -302,6 +302,7 @@
   .gallery__item {
     flex-basis: 50%;
     display: flex;
+
     &--fullwidth {
       flex-basis: 100%;
     }
@@ -310,6 +311,7 @@
   .gallery__box {
     padding-top: 0;
     border-bottom: none;
+
     &--fullwidth {
       margin-left: auto;
       margin-right: auto;
@@ -356,9 +358,11 @@
     padding: 1px;
     padding-left: 20px;
     position: relative;
+
     &--lightgray {
       background-color: $lightgray;
     }
+
     &--darkgray {
       background-color: $darkgray;
     }
@@ -376,8 +380,9 @@
 
   .gallery__info {
     margin-top: 17px;
+
     &--author {
-      margin-top: 0px;
+      margin-top: 0;
       margin-bottom: 15px;
     }
   }
@@ -529,7 +534,8 @@
 
   .gallery__photo {
     background-position: bottom;
-    &--sunset  {
+
+    &--sunset {
       width: 100%;
       background-image: url("../img/photo-sunset-desktop@1x.jpg");
     }
@@ -553,6 +559,7 @@
   .gallery__item {
     flex-basis: 33.333%;
     display: flex;
+
     &--fullwidth {
       flex-basis: 100%;
     }
@@ -567,7 +574,7 @@
   }
 
   .gallery__info {
-    color:: #ffffff;
+    color: #ffffff;
   }
 
   .gallery__likes {

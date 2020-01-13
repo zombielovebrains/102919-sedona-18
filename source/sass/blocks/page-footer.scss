@@ -47,7 +47,7 @@
   width: 27px;
   height: 34px;
   padding-left: 41px;
-  transition: 0.4;
+  transition: 0;
 
   &::after {
     content: "";
@@ -57,11 +57,13 @@
     position: absolute;
     top: 0;
     right: 0;
+    transition: 0;
   }
 
   &:hover {
     &::after {
       background-image: url("../img/logo-htmlacademy0.svg");
+      transition: 0;
     }
   }
 
@@ -85,7 +87,7 @@
   .page-footer__hashtag {
     padding-left: 15px;
     margin-top: 30px;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .page-footer__text {
@@ -103,7 +105,7 @@
   .page-footer__hashtag {
     padding-left: 63px;
     margin-top: 30px;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .page-footer__text {
