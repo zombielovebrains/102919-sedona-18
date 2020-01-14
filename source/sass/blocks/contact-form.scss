@@ -18,7 +18,7 @@
   line-height: 1.86;
   letter-spacing: normal;
   text-align: left;
-  color: #333;
+  color: #333333;
   text-transform: uppercase;
 
   padding-left: 20px;
@@ -129,6 +129,7 @@
     &::before {
       width: 280px;
     }
+
     &::after {
       width: 280px;
     }
@@ -139,6 +140,7 @@
     align-items: center;
     flex-basis: 50%;
     margin-top: 75px;
+
     &--last {
       margin-bottom: 0;
     }
@@ -151,6 +153,7 @@
   .contact-form__label {
     padding-left: 0;
     margin-right: 17px;
+
     &--short {
       display: block;
     }

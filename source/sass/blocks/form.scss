@@ -20,7 +20,7 @@
   line-height: 1.71;
   letter-spacing: normal;
   text-align: center;
-  color: #333;
+  color: #333333;
   text-transform: uppercase;
 
   &--title {
@@ -44,6 +44,7 @@
   padding-right: 0;
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
   &--last {
     border: none;
   }
@@ -119,7 +120,7 @@
     padding-top: 0;
     border-bottom: none;
 
-    &--halfwidth  {
+    &--halfwidth {
       flex-basis: 50%;
     }
 
@@ -150,6 +151,7 @@
   .form__legend {
     font-size: 21px;
     line-height: 1.24;
+
     &--left {
       text-align: left;
     }
@@ -179,6 +181,15 @@
 
     &--sights {
       padding-top: 52px;
+    }
+  }
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form__set {
+    &--halfwidth {
+      flex-basis: 45%;
     }
   }
 }
