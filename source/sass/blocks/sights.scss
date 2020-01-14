@@ -68,7 +68,7 @@
 
 @media (min-width: 768px) {
   .sights__legend {
-    padding:  0 120px;
+    padding: 0 120px;
     flex-basis: 100%;
     position: relative;
 
@@ -135,16 +135,15 @@
 
 @media (min-width: 1200px) {
   .sights__legend {
+    padding: 0 280px;
+
     &::before {
       width: 280px;
     }
+
     &::after {
       width: 280px;
     }
-  }
-
-  .sights__legend {
-    padding: 0 280px;
   }
 
   .sights__flexbox {
@@ -156,9 +155,11 @@
   .sights__label {
     flex-basis: auto;
     margin-top: 42px;
+
     &--rightcol {
       padding-left: 0;
     }
+
     &--leftcol {
       padding-left: 0;
     }

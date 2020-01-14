@@ -1,7 +1,7 @@
 .logobox {
   padding: 0 20px;
   min-height: 56px;
-  background-color: #fff;
+  background-color: #ffffff;
   position: relative;
 
   display: flex;
@@ -23,7 +23,7 @@
   margin: 0;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .logobox {
     position: absolute;
     width: 1px;
