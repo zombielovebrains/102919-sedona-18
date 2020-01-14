@@ -32,31 +32,40 @@
 
   margin-right: 23px;
 
+  &::before {
+    content: "";
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #333333;
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    z-index: 2;
+    pointer-events: none;
+    display: none;
+  }
+
   &:hover {
     background-color: #e5e5e5;
   }
 
   &:active {
     background-color: #d5d5d5;
+
+    &::before {
+      opacity: 0.3;
+    }
   }
+}
+
+.poll__input:checked + .poll__fakeinput::before {
+  display: block;
 }
 
 .poll__text {
   margin-top: 13px;
 }
-
-.poll__input:checked + .poll__label::before {
-  content: "";
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  background-color: #333333;
-  position: absolute;
-  top: 18px;
-  left: 17px;
-  z-index: 2;
-}
-
 
 @media (min-width: 768px) {
   .poll {

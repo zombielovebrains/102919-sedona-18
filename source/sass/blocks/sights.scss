@@ -32,12 +32,29 @@
 
   margin-right: 23px;
 
+  &::before {
+    content: "";
+    width: 24px;
+    height: 16px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 19px;
+    left: 17px;
+    z-index: 2;
+    display: none;
+  }
+
   &:hover {
     background-color: #e5e5e5;
   }
 
   &:active {
     background-color: #d5d5d5;
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -45,16 +62,8 @@
   margin-top: 13px;
 }
 
-.sights__input:checked + .sights__label::before {
-  content: "";
-  width: 24px;
-  height: 16px;
-  background-image: url("../img/icon-tick.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 19px;
-  left: 17px;
-  z-index: 2;
+.sights__input:checked + .sights__fakeinput::before {
+  display: block;
 }
 
 @media (min-width: 768px) {
