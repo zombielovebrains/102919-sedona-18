@@ -55,32 +55,20 @@
   margin: 0;
   padding-top: 22px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__photobox {
+  height: 280px;
+  overflow: hidden;
+  width: 280px;
 }
 
 .gallery__photo {
-  min-width: 280px;
-  height: 280px;
+  width: 100%;
+  height: auto;
   display: flex;
-
-  &--sunset {
-    background-image: url("../img/photo-sunset-mobile@1x.jpg");
-    background-size: cover;
-  }
-
-  &--cactus {
-    background-image: url("../img/photo-cactus-mobile@1x.jpg");
-    background-size: cover;
-  }
-
-  &--roads {
-    background-image: url("../img/photo-roads-mobile@1x.jpg");
-    background-size: cover;
-  }
-
-  &--bridge {
-    background-image: url("../img/photo-bridge-mobile@1x.jpg");
-    background-size: cover;
-  }
 }
 
 .gallery__info {
@@ -148,10 +136,9 @@
 }
 
 .gallery__videowrap {
-  background-image: url("../img/video-mobile@1x.jpg");
-  background-size: cover;
-  min-width: 321px;
-  min-height: 201px;
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
 }
 
 .gallery__timeline {
@@ -326,31 +313,13 @@
     }
   }
 
-  .gallery__photo {
-    min-width: 324px;
+  .gallery__photobox {
     height: 267px;
-    display: flex;
+    width: 324px;
 
-    &--sunset {
-      width: 648px;
+    &--fullwidth {
       height: 400px;
-      background-image: url("../img/photo-sunset-tablet@1x.jpg");
-      background-size: cover;
-    }
-
-    &--cactus {
-      background-image: url("../img/photo-cactus-tablet@1x.jpg");
-      background-size: cover;
-    }
-
-    &--roads {
-      background-image: url("../img/photo-roads-tablet@1x.jpg");
-      background-size: cover;
-    }
-
-    &--bridge {
-      background-image: url("../img/photo-bridge-tablet@1x.jpg");
-      background-size: cover;
+      width: 648px;
     }
   }
 
@@ -380,7 +349,7 @@
 
   .gallery__info {
     margin-top: 17px;
-    padding-right: 150px;
+    padding-right: 80px;
 
     &--author {
       margin-top: 0;
@@ -390,7 +359,7 @@
 
   .gallery__like {
     margin-right: 10px;
-    background-image: url("../img/icon-like.svg");
+    background-image: url("../img/icon-like0.svg");
     opacity: 1;
   }
 
@@ -403,9 +372,13 @@
   }
 
   .gallery__videowrap {
-    background-image: url("../img/video-tablet@1x.jpg");
-    min-width: 648px;
-    height: 499px;
+    width: 648px;
+    height: 500px;
+  }
+
+  .gallery__controlpanel {
+    margin-top: -92px;
+    position: relative;
   }
 
   .gallery__timeline {
@@ -415,14 +388,9 @@
     margin-top: -4px;
     margin-right: 42px;
     display: flex;
-
-    &--v1 {
-      display: none;
-    }
-
-    &--v2 {
-      display: flex;
-    }
+    position: absolute;
+    top: 28px;
+    left: 93px;
   }
 
   .gallery__line {
@@ -449,7 +417,6 @@
   .gallery__control {
     min-width: 648px;
     min-height: 93px;
-    margin-top: -92px;
     padding-top: 3px;
     padding-left: 35px;
     padding-right: 41px;
@@ -478,6 +445,7 @@
 
     &--sub {
       background-image: url("../img/icon-video-subtitles.svg");
+      margin-left: auto;
 
       &:hover {
         background-image: url("../img/icon-video-subtitles.svg");
@@ -533,27 +501,11 @@
     position: relative;
   }
 
-  .gallery__photo {
-    background-position: bottom;
+  .gallery__photobox {
+    width: 400px;
 
-    &--sunset {
-      width: 100%;
-      background-image: url("../img/photo-sunset-desktop@1x.jpg");
-    }
-
-    &--cactus {
-      background-image: url("../img/photo-cactus-desktop@1x.jpg");
-      background-size: cover;
-    }
-
-    &--roads {
-      background-image: url("../img/photo-roads-desktop@1x.jpg");
-      background-size: cover;
-    }
-
-    &--bridge {
-      background-image: url("../img/photo-bridge-desktop@1x.jpg");
-      background-size: cover;
+    &--fullwidth {
+      width: 1200px;
     }
   }
 
@@ -576,6 +528,7 @@
 
   .gallery__info {
     color: #ffffff;
+    padding-right: 150px;
   }
 
   .gallery__likes {
@@ -588,12 +541,12 @@
   }
 
   .gallery__like {
-    opacity: 1;
+    background-image: url("../img/icon-like.svg");
   }
 
   .gallery__videowrap {
-    background-image: url("../img/video-desktop@1x.jpg");
-    min-width: 800px;
+    width: 800px;
+    height: 500px;
   }
 
   .gallery__control {
