@@ -21,10 +21,8 @@
   }
 }
 
-@media
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-   .main-screen {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .main-screen {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: cover;
   }
@@ -70,10 +68,8 @@
     }
   }
 
-  @media
-    (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-     .main-screen {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .main-screen {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: cover;
     }
@@ -120,10 +116,8 @@
     }
   }
 
-  @media
-    (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-     .main-screen {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .main-screen {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: cover;
     }
