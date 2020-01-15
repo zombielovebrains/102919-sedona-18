@@ -12,23 +12,24 @@
       <header class="page-header">
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__wrap"><a href="" class="main-nav__item main-nav__item--active main-nav__item--first active-element">Главная</a></li>
+            <li class="main-nav__wrap"><a href="index.html" class="main-nav__item main-nav__item--active main-nav__item--first active-element">Главная</a></li>
             <li class="main-nav__wrap"><a href="photo.html" class="main-nav__item active-element">Фото и видео</a></li>
-            <li class="main-nav__item main-nav__item--logobox">
-              <a href="index.html" class=" active-element"><img class="main-nav__logo main-nav__logo--main" src="img/logo-sedona-mobile.svg" width="102" height="83"></a>
-              <a href="index.html" class=" active-element"><img class="main-nav__logo main-nav__logo--clouds" src="img/logo-sedona-tablet.svg" width="102" height="83"></a>
-              <a href="index.html" class=" active-element"><img class="main-nav__logo main-nav__logo--border" src="img/logo-sedona-desktop.svg" width="188" height="96"></a>
+            <li class="main-nav__logobox">
+              <a href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" width="188" height="96">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg" width="102" height="83">
+                  <img src="img/logo-sedona-mobile.svg" alt="Sedona" class="main-nav__logo">
+                </picture>
+              </a>
+              <button type="button" name="button" class="main-nav__burger">
+                <img src="img/icon-menu.svg" alt="открыть меню" width="23" height="21">
+              </button>
             </li>
             <li class="main-nav__wrap"><a href="form.html" class="main-nav__item active-element">Форма отзыва</a></li>
             <li class="main-nav__wrap"><a href="" class="main-nav__item main-nav__item--last active-element">HTML academy</a></li>
           </ul>
         </nav>
-        <div class="logobox">
-          <a href="index.html" class=" active-element"><img class="logo__logo" src="img/logo-sedona-mobile.svg" width="102" height="83"></a>
-          <button type="button" name="button" class="logo__burger">
-            <img src="img/icon-menu.svg" alt="открыть меню" width="23" height="21">
-          </button>
-        </div>
       </header>
       <main class="page-main">
         <section class="main-screen main-screen--other">
@@ -48,8 +49,14 @@
             <li class="gallery__item  gallery__item--fullwidth">
               <figure class="gallery__box gallery__box--fullwidth">
                 <div class="gallery__body">
-                  <div class="gallery__photobox">
-                    <a class="gallery__photo gallery__photo--sunset" href=""></a>
+                  <div class="gallery__photobox gallery__photobox--fullwidth">
+                    <a href="">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                        <img src="img/photo-sunset-mobile@1x.jpg" alt="Красивое фото" srcset="img/photo-sunset-mobile@2x.jpg 2x"  class="gallery__photo">
+                      </picture>
+                    </a>
                   </div>
                   <figcaption class="gallery__description gallery__description--lightgray">
                     <p class="gallery__info gallery__info--name">Неродные просторы</p>
@@ -63,7 +70,13 @@
               <figure class="gallery__box gallery__box--leftcol">
                 <div class="gallery__body">
                   <div class="gallery__photobox">
-                    <a class="gallery__photo gallery__photo--cactus" href=""></a>
+                    <a class="" href="">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                        <img src="img/photo-cactus-mobile@1x.jpg" alt="Красивое фото" srcset="img/photo-bridge-mobile@2x.jpg 2x"  class="gallery__photo">
+                      </picture>
+                    </a>
                   </div>
                   <figcaption class="gallery__description gallery__description--lightgray">
                     <p class="gallery__info gallery__info--name">Местная растительность</p>
@@ -77,7 +90,13 @@
               <figure class="gallery__box gallery__box--rightcol">
                 <div class="gallery__body">
                   <div class="gallery__photobox">
-                    <a class="gallery__photo gallery__photo--roads" href=""></a>
+                    <a class="" href="">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                        <img src="img/photo-roads-mobile@1x.jpg" alt="Красивое фото" srcset="img/photo-roads-mobile@2x.jpg 2x"  class="gallery__photo">
+                      </picture>
+                    </a>
                   </div>
                   <figcaption class="gallery__description gallery__description--darkgray">
                     <p class="gallery__info gallery__info--name">Дорога на север</p>
@@ -91,7 +110,13 @@
               <figure class="gallery__box gallery__box--leftcol">
                 <div class="gallery__body">
                   <div class="gallery__photobox">
-                    <a class="gallery__photo gallery__photo--bridge" href=""></a>
+                    <a class="" href="">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                        <img src="img/photo-bridge-mobile@1x.jpg" alt="Красивое фото" srcset="img/photo-bridge-mobile@2x.jpg 2x"  class="gallery__photo">
+                      </picture>
+                    </a>
                   </div>
                   <figcaption class="gallery__description gallery__description--lightgray">
                     <p class="gallery__info gallery__info--name">Мост Дьявола</p>
@@ -108,16 +133,19 @@
               <p class="gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             </div>
             <div class="gallery__video">
-              <div class="gallery__videowrap"></div>
+              <div class="gallery__videowrap">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                  <img src="img/video-mobile@1x.jpg" alt="Красивое фото" srcset="img/video-mobile@2x.jpg 2x"  class="gallery__photo">
+                </picture>
+              </div>
               <div class="gallery__controlpanel">
                 <div class="gallery__timeline gallery__timeline--v1">
                   <div class="gallery__line"></div>
                 </div>
                 <div class="gallery__control">
                   <button class="gallery__btn gallery__btn--replay active-element"></button>
-                  <div class="gallery__timeline gallery__timeline--v2">
-                    <div class="gallery__line"></div>
-                  </div>
                   <button class="gallery__btn gallery__btn--sub active-element"></button>
                   <button class="gallery__btn gallery__btn--full active-element"></button>
                 </div>

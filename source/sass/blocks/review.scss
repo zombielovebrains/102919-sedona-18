@@ -62,6 +62,10 @@
   }
 }
 
+.review__warning {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .review__textarea {
     margin-top: 55px;
@@ -121,6 +125,7 @@
     text-transform: uppercase;
 
     align-self: center;
+    display: block;
   }
 }
 

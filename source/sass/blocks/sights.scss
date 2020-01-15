@@ -131,6 +131,11 @@
   .sights__input:checked + .sights__label--rightcol::before {
     left: 47px;
   }
+
+  .sights__flexbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 1200px) {
