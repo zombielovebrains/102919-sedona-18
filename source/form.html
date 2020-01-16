@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css\style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Седона - форма отзыва</title>
   </head>
@@ -17,8 +17,8 @@
             <li class="main-nav__logobox">
               <a href="index.html">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" width="188" height="96">
-                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg" width="102" height="83">
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
                   <img src="img/logo-sedona-mobile.svg" alt="Sedona" class="main-nav__logo">
                 </picture>
               </a>
@@ -95,11 +95,11 @@
                     <label class="contact-form__box active-element">
                       <span class="contact-form__label contact-form__label--large contact-form__label--one">Контактный телефон*:</span>
                       <span class="contact-form__label contact-form__label--short contact-form__label--one">Телефон*:</span>
-                      <div class="contact-form__wrapper contact-form__wrapper--tel"><input type="tel" class="form__input contact-form__input contact-form__input--phone" name="phone" placeholder="Введите телефон" id="phone" required></div>
+                      <span class="contact-form__wrapper contact-form__wrapper--tel"><input type="tel" class="form__input contact-form__input contact-form__input--phone" name="phone" placeholder="Введите телефон" id="phone" required></span>
                     </label>
                     <label class="contact-form__box contact-form__box--last active-element">
                       <span class="contact-form__label contact-form__label--one">Электронная почта*:</span>
-                      <div class="contact-form__wrapper contact-form__wrapper--mail"><input type="email" class="form__input contact-form__input contact-form__input--mail" name="mail" placeholder="Введите e-mail" id="mail" required></div>
+                      <span class="contact-form__wrapper contact-form__wrapper--mail"><input type="email" class="form__input contact-form__input contact-form__input--mail" name="mail" placeholder="Введите e-mail" id="mail" required></span>
                     </label>
                   </div>
                 </div>
@@ -109,15 +109,15 @@
                   <p class="form__legend form__legend--left  poll__legend ">Ваше общее впечатление:</p>
                   <label for="good" class="poll__label poll__label--first active-element">
                     <input type="radio" name="poll" value="good" id="good" class="poll__input visually-hidden"  checked >
-                    <div class="poll__fakeinput"></div><span class="poll__text">Скорее положительное</span>
+                    <span class="poll__fakeinput"></span><span class="poll__text">Скорее положительное</span>
                   </label>
                   <label for="bad" class="poll__label active-element">
                     <input type="radio" name="poll" value="bad" id="bad" class="poll__input visually-hidden">
-                    <div class="poll__fakeinput"></div><span class="poll__text">Скорее отрицательное</span>
+                    <span class="poll__fakeinput"></span><span class="poll__text">Скорее отрицательное</span>
                   </label>
                   <label for="neutral" class="poll__label poll__label--last active-element">
                     <input type="radio" name="poll" value="neutral" id="neutral" class="poll__input visually-hidden">
-                    <div class="poll__fakeinput"></div><span class="poll__text">Затрудняюсь ответить</span>
+                    <span class="poll__fakeinput"></span><span class="poll__text">Затрудняюсь ответить</span>
                   </label>
                 </div>
               </fieldset>
@@ -127,19 +127,19 @@
                   <div class="sights__flexbox">
                     <label for="devilbridge" class="sights__label sights__label--leftcol  sights__label--first active-element">
                       <input type="checkbox" name="devilbridge" value="" class="sights__input visually-hidden" id="devilbridge" checked>
-                      <div class="sights__fakeinput"></div><span class="sights__text">Мост Дьявола</span>
+                      <span class="sights__fakeinput"></span><span class="sights__text">Мост Дьявола</span>
                     </label>
                     <label for="mountainbell" class="sights__label sights__label--firstcol sights__label--rightcol active-element">
                       <input type="checkbox" name="mountainbell" value="" class="sights__input visually-hidden" id="mountainbell" checked>
-                      <div class="sights__fakeinput"></div><span class="sights__text">Гора-Колокол</span>
+                      <span class="sights__fakeinput"></span><span class="sights__text">Гора-Колокол</span>
                     </label>
                     <label for="slidepark" class="sights__label sights__label--leftcol active-element">
                       <input type="checkbox" name="slidepark" value="" class="sights__input visually-hidden" id="slidepark" checked>
-                      <div class="sights__fakeinput"></div><span class="sights__text">Слайд-парк</span>
+                      <span class="sights__fakeinput"></span><span class="sights__text">Слайд-парк</span>
                     </label>
                     <label for="redrocks" class="sights__label sights__label--last sights__label--rightcol sights__label--last active-element">
                       <input type="checkbox" name="redrocks" value="" class="sights__input visually-hidden" id="redrocks">
-                      <div class="sights__fakeinput"></div><span class="sights__text">Красные скалы</span>
+                      <span class="sights__fakeinput"></span><span class="sights__text">Красные скалы</span>
                     </label>
                   </div>
                 </div>

@@ -82,8 +82,8 @@ gulp.task("server", function () {
 });
 
 gulp.task("refresh", function () {
-	server.reload();
-	done();
+server.reload();
+done();
 });
 
 
