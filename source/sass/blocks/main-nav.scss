@@ -68,7 +68,7 @@
   position: relative;
 
   display: flex;
-  order: 5;
+  order: 6;
 }
 
 .main-nav__logo {
@@ -84,6 +84,25 @@
   padding: 0;
   margin: 0;
   margin-left: auto;
+}
+
+.main-nav__wrap {
+
+  &--1 {
+    order: 1;
+  }
+
+  &--2 {
+    order: 2;
+  }
+
+  &--4 {
+    order: 4;
+  }
+
+  &--5 {
+    order: 5;
+  }
 }
 
 @media (min-width: 768px) {
@@ -155,7 +174,7 @@
   }
 
   .main-nav__logobox {
-    order: initial;
+    order: 3;
     width: 156px;
     position: relative;
     display: flex;
